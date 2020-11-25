@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+}
+.enigma{
+    color: white;
+}
+
+
+
+/*navegador vertical*/
+nav ul{
+    list-style: none; 
+    padding: 0;
+    float: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav li{
+    line-height: 3rem;
+    position: relative;
+
+}
+
+nav li ul {
+    position: absolute;
+    display: none;
+
+}
+nav li:hover ul{
+    display: block;
+    text-decoration-color: greenyellow;
+
+}
+nav a {
+    color: white;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: .4s;
+
+}
+nav a:hover{
+    background: rgba(0,0,0,.5);
+    text-decoration-color: greenyellow;
+}
+
+
+
+nav > ul {
+    background: #333;
+    display: table;
+
+}
+
+nav > ul >li {
+    float: left;
+
+}
+
+
+nav li li {
+    background: #222;
+    transition: all 4s;
+
+
+}

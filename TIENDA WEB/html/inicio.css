@@ -1,0 +1,190 @@
+html{
+  font-family: 'Goldman', cursive;
+  background-color: black;
+  color:white;
+  padding-top: 0;
+  
+}
+.logo{
+  display: relative;
+  width: 80%;
+  height: 600px;
+  background-image: url(https://allegra.flowersetcfresno.com/pic/401006_full-fondo-de-pantalla-coding-1920x1080-4k-programming-wallpapers-top-free-4k-programming-backgrounds.jpg);
+  background-size: cover;
+  background-position: -40%, 45%;
+  border-radius: 50px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60px;
+   
+}
+
+.enigma{
+  flex-direction: column;
+  font-size: 500%;
+  padding-top: 200px;
+  padding-left: 100px;
+}
+
+.parrafo{
+  font-size: 130%;
+  padding-left: 100px;
+}
+
+#linea{
+  width: 350px;
+  margin-left: 100px;
+  margin-top: -60px;
+}
+
+/* menu principal */
+.navinicial{
+  background-color: black;
+  
+  
+}
+nav ul{
+  list-style: none; 
+  padding: 0;
+  float: inherit;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+nav li{
+  line-height: 2.5rem;
+  position: relative;
+
+}
+
+nav li ul {
+  position: absolute;
+  display: none;
+
+}
+nav li:hover ul{
+  display: block;
+  text-decoration-color: greenyellow;
+
+}
+nav a {
+  color: white;
+  display: block;
+  padding: 0 2.5em;
+  text-decoration: none;
+  transition: .4s;
+
+}
+nav a:hover{
+  background: #111;
+  
+}
+
+
+
+nav > ul {
+  background: black;
+  display: table;
+
+}
+
+nav > ul >li {
+  float: left;
+
+}
+
+
+nav li li {
+  background: black;
+  transition: all 4s;
+
+}
+
+.br{
+  color: white;
+}
+.resumen_contenido2{
+    display: flex;
+   
+    width: 100%;
+    flex-direction: row;
+}
+.hardware{
+    
+    height: 200px;
+    position: relative;
+    width: 50%;
+    
+
+
+    
+
+
+}
+
+.div-imagen {
+    display:inline-block;
+    position:relative;
+    
+    
+}
+        
+.div-imagen > div {
+    position:absolute;
+     top:0;
+    left:0;
+    z-index:-1;
+     padding:10px;
+    margin:0;
+    
+}
+        
+.desvanecer:hover {
+            
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+    border: 2px solid black;
+}
+.desvanecer{
+    width: 300px;
+    height: 200px;
+}
+.precios{
+    color:red;
+}
+.preciosrebaja{
+    color: green;
+}
+.cursos{
+    width:100%;
+    height: 100%;
+    transition: all 1s ease;
+
+}
+.cursos_pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.cursos:hover{
+    transform: scale(0.9);
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+    
+   
+    
+
+
