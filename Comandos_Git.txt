@@ -1,0 +1,56 @@
+RAMAS
+
+git branch--> Listado de ramas creadas.
+git log - -oneline - -decorate - - all - -graph -->Listado de todas las ramas y sus bifurcaciones
+git Branch (Nombre de la rama que voy a crear)--> Crear nueva rama
+git checkout (Nombre de la rama a la que quiero cambiar) --> para cambiar entre ramas
+git checkout -b (Nombre de la rama a crear) --> creamos una rama y nos metemos en ella
+git Branch -m (nombre de la rama) ( nuevo nombre) -->Cambiar nombre de la rama especificada.
+git branch -d (nombre de la rama)  eliminar rama especificada
+git branch -h -->listado de opciones que da git branch
+git log  - -oneline - -decorate - - all -->vemos todos los comits de todas las ramas
+git log  - -oneline - -decorate –graph-->vemos las ramificaciones en los commits
+git merge (nombre de la rama) --> importante: cambios solo en una rama. fusión de ramas por fast-forward.
+git merge ( nombre de la rama) -->Importante: cambios en ambas ramas. Estrategia recursiva
+rm -r<nombre repo> --> .gitdestruir repositorio
+GIT MERGE --abort -->desahce un merge o fusión
+
+ALIAS
+git config --global alias.<nombre alias> <'nombre comando'>--> creamos un alias al comando escrito
+git config --global --get-regexp alias--> devuelve todos los alias
+git config --global --unset alias.<nombre_alias>--> borra ese alias
+
+TAGS
+git tag 0.2.0 --> crea un tag con la versión que nosotros indiquemos(0.2.0 ejemplo de version)
+git tag edf326 -->crea tag en el commit indicado miedante el hash
+git checkout 0.2.0 --> cambiamos al commit con tag v 0.2.0
+git tag --> listado de tags
+git tag -h --> muestra todos los comandos de tag
+git tag -d V0.2.0 --> elimina el tag v0.2.0
+git tag -l "v0.2.*"--> muestra todos los tags de la serie v0.2.
+git tag -a V0.3.0 --> crea un tag anotado
+git show v0.3.0 --> muestra de forma ampliada el tag
+
+
+STASH
+Git stash --> guarda el directorio de trabajo en el stash
+git stash list --> ver lo que hay almacenado en el stash
+git stash -h --> listado comandos stash
+git stash apply --> aplica cambios al stash
+git stash drop --> eliminar el stash
+git stash save "Mensaje"--> pone un mensaje en el stash
+git stash pop --> nos saca de stash los cambios guardados, ya visibles desde git status
+
+git REMOTE
+
+git remote add <nombre que queramos> < https clone>---> nos crea el remoto y lo añadimos
+git remote --> devuelve todos los remotos 
+git remote -v-->más información del repositorio
+git push <master>--> subir al repositorio la rama que queremos subir
+git push --all---> sube todas las ramas
+git pull <nombre remote> <rama>
+git fetch--> pedir al repositorio si tiene novedades (suele pedir contraseña pero por alguna extraña razon ami no)
+git pull --rebase<nombre remote> master--> ordena los commits y añade los cambios.
+git clone <hhtps o hss>---> clona el repositorio completo
+git rebase master---> aplana los commits haciendo que vaya uno detrás de otro.
+git rebase --i--> rebase interactivo, en el que podemos modificar mensaje commit, modificar orden e.t.c(WARNING: comando destructivo que modifica el historial e incluso los hash de commits)
