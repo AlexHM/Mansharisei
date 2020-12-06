@@ -5,12 +5,12 @@ html{
     padding: 0;   
 }
 
-
+/* estilo del logo superior*/
 .logo{
     display: relative;
     width: 80%;
     height: 600px;
-    background-image: url(https://allegra.flowersetcfresno.com/pic/401006_full-fondo-de-pantalla-coding-1920x1080-4k-programming-wallpapers-top-free-4k-programming-backgrounds.jpg);
+    background-image: url(https://miro.medium.com/max/15606/1*pfOreEtmEEbYo6Gmx8Ov1Q.jpeg);
     background-size: cover;
     background-position: -40%, 45%;
     border-radius: 50px;
@@ -18,9 +18,6 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: -60px;
-   
-    
-     
 }
 
 .enigma{
@@ -297,6 +294,7 @@ nav li li {
     background-color:black;   
 }
 
+/*imagenes con hover*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 figure.snip0015 {
   font-family: 'Raleway', Arial, sans-serif;
@@ -431,7 +429,7 @@ figure.snip0015:hover figcaption::before {
     text-align: center;
 }
 
-/*zona mapa movible*/
+/*zona mapa*/
 
 .historia1{
     height:600px;
@@ -443,7 +441,7 @@ figure.snip0015:hover figcaption::before {
     background-size: cover;
     background-position: center;    
 }
-/*footer final y general */
+/*footer final */
 
 footer{
     width: 100%;
@@ -493,8 +491,8 @@ footer{
 }
 
 .row img{
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
 }
 
 .row label{
@@ -517,8 +515,8 @@ footer{
 }
 
 .row2 img{
-    width: 36px;
-    height: 36px;
+    width: 25px;
+    height: 25px;
 }
 
 .row2 label{

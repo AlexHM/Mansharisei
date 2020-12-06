@@ -5,11 +5,14 @@ html{
   padding-top: 0;
   
 }
+.body .p{
+  font-family: 'Inconsolata', monospace;
+}
 .logo{
   display: relative;
   width: 80%;
   height: 600px;
-  background-image: url(https://allegra.flowersetcfresno.com/pic/401006_full-fondo-de-pantalla-coding-1920x1080-4k-programming-wallpapers-top-free-4k-programming-backgrounds.jpg);
+  background-image: url(https://miro.medium.com/max/15606/1*pfOreEtmEEbYo6Gmx8Ov1Q.jpeg);
   background-size: cover;
   background-position: -40%, 45%;
   border-radius: 50px;
@@ -104,87 +107,456 @@ nav li li {
 .br{
   color: white;
 }
-.resumen_contenido2{
-    display: flex;
-   
-    width: 100%;
-    flex-direction: row;
-}
-.hardware{
-    
-    height: 200px;
-    position: relative;
-    width: 50%;
-    
 
 
-    
+/* CUERPO DE LA PAGINA WEB                    ///////////////////////////////////////////////////////////////////////////////////////// */
 
 
+.master{
+  background-color: #566573;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 30px;
 }
 
-.div-imagen {
-    display:inline-block;
-    position:relative;
-    
-    
+.explicacion{
+  background-color: #566573;
+  padding-bottom: 20px;
+  border-radius: 30px;
 }
-        
-.div-imagen > div {
-    position:absolute;
-     top:0;
-    left:0;
-    z-index:-1;
-     padding:10px;
-    margin:0;
-    
+
+.explicacion .texto_cabeceral{
+  text-align: center;
+  font-size: 100px;
 }
-        
-.desvanecer:hover {
-            
-    opacity: 0.07;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
-    border: 2px solid black;
+.explicacion .texto_parrafo{
+  text-align: center;
+  font-size: 20px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.desvanecer{
-    width: 300px;
-    height: 200px;
+.tienda{
+  background-color: #566573;
+  text-align: center;
 }
-.precios{
-    color:red;
+
+.tienda2{
+  align-items: center;
+  display:flex;
+  margin-left: 100px;
+  margin-right: auto;
 }
-.preciosrebaja{
-    color: green;
+
+.cositas{
+  font-size: 40px;
 }
+
+
 .cursos{
-    width:100%;
-    height: 100%;
-    transition: all 1s ease;
+  background-color: #566573;
+  display: flex;
+  flex-wrap: wrap;
+  height: 59vh;
+  border: 0.2cm transparent black;
 
-}
-.cursos_pro{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.cursos:hover{
-    transform: scale(0.9);
-    border: 2px solid black;
+  
 }
 
+.cursos2{
+
+  display:flex;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 7ch;
+  padding-top: 0%;
+  padding-bottom: 0%;
+
+  border: 0.2cm transparent orange;
+  
+}
+
+.titulocursos{
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 5px;
+  margin-top: 0%;
+  margin-bottom: 0ch;
+  margin-left: 30%;
+  padding-top: 5%;
+  padding-bottom: 0%;
+  font-size: 40px;
+  border: 0.2cm transparent red;
+  
+}
+
+div.imgcursos{
+
+  width: 10vh;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+div.imgcursos {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 410px;
+  max-width: 340px;
+  max-height: 240px;
+  width: 100%;
+  background: black;
+  text-align: center;
+  background-image: center;
+  
+}
+div.imgcursos * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.imgcursos img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+div.imgcursos p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3em 3em;
+  width: 100%;
+  height: 100%;
+}
+div.imgcursos p::before {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  bottom: 50%;
+  left: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+div.imgcursos h3,
+div.imgcursos p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+div.imgcursos h3 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(0%, 50%, 0);
+  transform: translate3d(0%, 50%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+div.snip0015 h3 span {
+  font-weight: 800;
+}
+div.imgcursos p {
+  font-weight: 200	;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+div.imgcursos a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+div.imgcursos:hover img {
+  opacity: 0.35;
+}
+div.imgcursos:hover  h3 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+div.imgcursos:hover  p {
+  opacity: 0.9;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+div.imgcursos:hover p::before {
+  background: rgba(255, 255, 255, 0);
+  top: 30px;
+  bottom: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+
+.nosotros{
+  background-color: grey;
+}
 
 
 
 
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+figure.snip0015 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 410px;
+  max-width: 340px;
+  max-height: 240px;
+  width: 100%;
+  background: black;
+  text-align: center;
+  background-image: center;
+  
+}
+figure.snip0015 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip0015 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.snip0015 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3em 3em;
+  width: 100%;
+  height: 100%;
+}
+figure.snip0015 figcaption::before {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  bottom: 50%;
+  left: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.snip0015 h2,
+figure.snip0015 p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0015 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(0%, 50%, 0);
+  transform: translate3d(0%, 50%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip0015 h2 span {
+  font-weight: 800;
+}
+figure.snip0015 p {
+  font-weight: 200	;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip0015 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+figure.snip0015:hover img {
+  opacity: 0.35;
+}
+figure.snip0015:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip0015:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.snip0015:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  top: 30px;
+  bottom: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.nos_n{
+  text-align: center;
+  font-size: 70px;
+}
+.nosotros{
+  background-color: black;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 400px;
 
-    
-   
-    
+}
+.nos{
+  width: 250px;
+  height: 150px;
+  
+}
+.eni{
+font-size: 40px;
+text-align: center;
+color: white;
+
+}
+.n_nosotros{
+  margin-left: 30px;
+font-size: 150%;
+}
+
+/* footer*/
+
+footer{
+  width: 100%;
+  background: #202020;
+  color: white;   
+  font-family: 'Secular One', sans-serif;
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.container-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1{
+  max-width: 400px;
+}
+
+.colum1 h1{
+  font-size: 22px;
+}
+
+.colum1 p{
+  font-size: 14px;
+  color: #C7C7C7;
+  margin-top: 20px;
+}
+
+.colum2{
+  max-width: 400px;
+  
+}
+
+.colum2 h1{
+  font-size: 22px;
+}
+
+.row{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row img{
+  width: 30px;
+  height: 30px;
+}
+
+.row label{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #C7C7C7;
+}
+
+.colum3{
+  max-width: 400px;
+}
+
+.colum3 h1{
+  font-size: 22px;
+}
+
+.row2{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img{
+  width: 25px;
+  height: 25px;
+}
+
+.row2 label{
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+
+.container-footer{
+  width: 100%;  
+  background: #101010;
+}
+
+.footer{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;  
+  padding: 20px;
+}
+
+.copyright{
+  color: #C7C7C7;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.information a{
+  text-decoration: none;
+  color: #C7C7C7;
+}
 
 
