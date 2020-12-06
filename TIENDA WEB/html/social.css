@@ -7,7 +7,7 @@ html{
 
 /*zona superior logo principal*/
 .logo{
-    display: relative;
+   
     width: 80%;
     height: 600px;
     background-image: url(https://miro.medium.com/max/15606/1*pfOreEtmEEbYo6Gmx8Ov1Q.jpeg);
@@ -119,7 +119,7 @@ nav li li {
     position: relative;
     width: 100%;
     height: 100%;
-    padding-bottom: -10%;;
+   
 }
 
 .espacio{
@@ -157,7 +157,7 @@ nav li li {
     
     height: 900px;
     width: 50%;
-    position: auto;
+  
     background-color: #283747;
     position: relative;
     float: left;
@@ -168,7 +168,7 @@ nav li li {
 
 .doble-dcha{
     height: 900px;
-    position: auto;
+  
     width: 50%;
     background-color: #2C3E50;
     position: relative;
@@ -199,7 +199,7 @@ nav li li {
     left: 650px;
     clear:both;
     position: absolute;
-    background-color:none;
+  
     z-index: 3;
     box-shadow: -10px 20px 60px black;
     border-color: black;

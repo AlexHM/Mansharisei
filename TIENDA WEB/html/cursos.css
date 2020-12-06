@@ -44,7 +44,7 @@ body{
 }
 .navinicial{
   
-  float: center;
+  
   font-family: 'Goldman', cursive;
   
 
@@ -134,7 +134,7 @@ div p{
   justify-content:center;
   color: white;
   font-size: 0.7cm;
-  float: center;
+
   font-family: 'inconsolata';
  
 

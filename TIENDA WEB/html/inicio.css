@@ -9,7 +9,7 @@ html{
   font-family: 'Inconsolata', monospace;
 }
 .logo{
-  display: relative;
+  
   width: 80%;
   height: 600px;
   background-image: url(https://miro.medium.com/max/15606/1*pfOreEtmEEbYo6Gmx8Ov1Q.jpeg);
@@ -198,7 +198,9 @@ div.imgcursos{
 
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+ 
+
+
 div.imgcursos {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
@@ -211,7 +213,7 @@ div.imgcursos {
   width: 100%;
   background: black;
   text-align: center;
-  background-image: center;
+  
   
 }
 div.imgcursos * {
@@ -314,7 +316,7 @@ div.imgcursos:hover p::before {
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
 figure.snip0015 {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
@@ -327,7 +329,7 @@ figure.snip0015 {
   width: 100%;
   background: black;
   text-align: center;
-  background-image: center;
+  
   
 }
 figure.snip0015 * {
