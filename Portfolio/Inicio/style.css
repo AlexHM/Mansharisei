@@ -1,0 +1,121 @@
+*{
+  color:white;
+  
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background:black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Estilos navegador*/
+
+#nav{
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 150px;
+}
+.enlac{
+  color:aqua;
+ 
+
+}
+.uls:hover{
+  transition: all 0.2s;
+  opacity: 60%;
+  display:flex;
+  
+  
+  
+  
+}
+.elemento{
+  list-style-type: none;
+  font-size:x-large;
+  
+  
+}
+.elemento:hover{
+  transform: scale(0.9);
+  transition:0.3s;
+  
+  
+  
+ 
+}
+/*Alejandro*/
+#alejandro{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+}
+.alex2{
+  color: aqua;
+}
+.parrafo_oculto{
+  color: white;
+}
+
+/* Skills*/
+
+#cuadricula{
+  height: 100%;
+  border-radius: 15px;
+  padding: 5%;
+  /* background-color: rosybrown; */
+  
+}
+#skill{
+  color: aqua;
+}
+.yt{
+  border-radius: 7%;
+  border: 2px solid aqua;
+}
+
+/*footer*/
+
+#pie{
+  background-color:#434343;
+  margin-top: 10%;
+  height: 200px;
+}
+.interior{
+  margin-top: 1%;
+  
+}
+#contact{
+    margin-top: 15%;
+}
+#legal{
+  margin-top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

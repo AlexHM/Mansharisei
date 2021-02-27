@@ -1,0 +1,644 @@
+import java.util.Scanner;
+
+public class testNaruto {
+
+	Scanner sc = new Scanner(System.in);
+	private int res = 0;
+	private static int acierto = 0;
+	private static int fallo = 0;
+	int[] respuestas = { 2 };
+
+	public void pregunta1() {
+
+		System.out.println("1ª pregunta:");
+		System.out.println("Cual es el dojutsu de los Uchiha?");
+		System.out.print(" 1:Byakugan\n 2:Sharingan \n 3:Rinnegan");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 2) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 3) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 2) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta2() {
+		System.out.println("2ª pregunta:");
+		System.out.println("Cual de estos tres jutsus realiza Naruto:");
+		System.out.print(" 1:Sintensin no Jutsu\n 2:Chidori \n 3:Kage bunshin no Jutsu");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 3) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 2) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta3() {
+
+		System.out.println("3ª pregunta:");
+		System.out.println("¿Quien despertó el Rinnegan siendo un anciano?:");
+		System.out.print(" 1:Senju Hashirama\n 2:Uchiha Obito \n 3:Uchiha Madara");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 3) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 2) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta4() {
+		System.out.println("4ª pregunta:");
+		System.out.println("¿Como se llama el Arbol Divino?:");
+		System.out.print(" 1:Senju \n 2:Shinju \n 3:Fruto de chakra");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 2) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 3) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 2) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta5() {
+		System.out.println("5ª pregunta:");
+		System.out.println("¿Quien es el compañero de Hidan en Akatsuki?:");
+		System.out.print(" 1:Kakuzu \n 2:Uchiha Itachi\n 3:Deidara");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 1) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 2 || res == 3) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 1) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta6() {
+		System.out.println("6ª pregunta:");
+		System.out.println("Habilidad para mover objetos a otra dimensión:");
+		System.out.print(" 1:Kamui \n 2:Rine tensei no Jutsu \n 3:Bansho Ten'");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 1) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 2 || res == 3) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 1) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta7() {
+		System.out.println("7ª pregunta:");
+		System.out.println("¿Quien inicio la 4º Guerra ninja:");
+		System.out.print(" 1:Tobi \n 2:Uchiha Madara \n 3:Uchiha Obito");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 2) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 3) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 2) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+
+		}
+
+	}
+
+	public void pregunta8() {
+		System.out.println("8ª pregunta:");
+		System.out.println("¿Que son las conocidas 'llamas negras'?");
+		System.out.print(
+				" 1:Unas llamas que nunca se extinguen \n 2:Un jutsu del Clan Uzumaki \n 3:Un Jutsu del clan Nara \n");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 1) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 2 || res == 3) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 1) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+		}
+	}
+
+	public void pregunta9() {
+		System.out.println("9ª pregunta:");
+		System.out.println("¿Como es conocido el Yonbi(Cuarto bijuu)? ");
+		System.out.print(" 1:Kurama \n 2:Matatabi \n 3:Son Goku \n");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 3) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 2) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+		}
+
+	}
+
+	public void pregunta10() {
+		System.out.println("9ª pregunta:");
+		System.out.println("¿A quién supuestamente mató Uchiha itachi? ");
+		System.out.print(" 1:Uchiha Sasuke \n 2:Uchiha Obito \n 3:Uchiha Shisui \n");
+		System.out.println();
+		System.out.println("Introduce respuesta númerica: ");
+		res = sc.nextInt();
+		if (res == 3) {
+			System.out.println("Respuesta correcta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			acierto++;
+
+		}
+		if (res == 1 || res == 2) {
+			System.out.println("Respuesta incorrecta");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			fallo++;
+		}
+
+		if (res < 1 || res > 3) {
+			while (res < 1 || res > 3) {
+				System.out.println("Respuesta fuera de rango. Prueba otra vez");
+				res = sc.nextInt();
+				if (res == 2) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 1) {
+					System.out.println("Respuesta incorrecta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					fallo++;
+					break;
+				} else if (res == 3) {
+					System.out.println("Respuesta correcta");
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					acierto++;
+					break;
+				}
+			}
+		}
+	}
+public static void main(String[] args) {
+		testNaruto objeto = new testNaruto();
+		System.out.println("TEST NARUTO");
+		System.out.println("////////////////////////////////////////////////");
+		System.out.println(
+				"El test contiene 10 preguntas sobre naruto. Las respuestas serán introduciendo el número correspondiente a la pregunta acertada. Responde a las preguntas sabiamente :)");
+		System.out.println();
+
+		objeto.pregunta1();
+		objeto.pregunta2();
+		objeto.pregunta3();
+		objeto.pregunta4();
+		objeto.pregunta5();
+		objeto.pregunta6();
+		objeto.pregunta7();
+		objeto.pregunta8();
+		objeto.pregunta9();
+		objeto.pregunta10();
+		
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println("Puntuación: ");
+		System.out.println("Aciertos: "+acierto);
+		System.out.println("Fallos: "+fallo);
+		if (acierto>fallo) {
+			System.out.println("Eres todo un sucio shinobi");
+		}
+		else {
+			System.out.println("Moriras como un genin, y nisiquiera sabrás que significa");
+		}
+
+	}
+}
