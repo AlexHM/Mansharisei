@@ -1,0 +1,122 @@
+*{
+    color:white;
+    
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    background:black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /* Navegador*/
+  #nav{
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 150px;
+  }
+  .enlac{
+    color:aqua;
+   
+  
+  }
+  .uls:hover{
+    transition: all 0.2s;
+    opacity: 60%;
+    display:flex;
+    
+    
+    
+    
+  }
+  .elemento{
+    list-style-type: none;
+    font-size:x-large;
+    
+    
+  }
+  .elemento:hover{
+    transform: scale(0.9);
+    transition:0.3s;
+  }
+  /*Proyects*/
+  #container2{
+    height: 10px;
+    
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5%;
+  }
+.col{
+    height: 350px;
+    border: 1px solid aqua;
+    border-radius: 5%;
+    margin: 2%;
+    text-align: center;
+  }
+ #webpage{
+   margin-top: 15%;
+   width: auto;
+   height:50%;
+
+  }
+ .proy{
+   color: aqua;
+   margin-top: 5px;
+  }
+ #rockstar{
+  margin-top: 15%;
+  width: auto;
+  height:50%;
+ } 
+ #bethesda{
+  margin-top: 15%;
+  width: auto;
+  height:50%;
+ }
+ #github{
+  margin-top: 15%;
+  width: auto;
+  height:50%;
+ }
+  
+  /*future proyects*/
+  #tit{
+    color: aqua;
+  }
+  #tit2{
+    color: aqua;
+  }
+  .titls{
+    margin-bottom: 2%;
+  }
+  #page:hover{
+    transform: scale(1.2);
+    transition: all 0.4s;
+  }
+  
+  
+ 
+
+
+  /*footer*/
+  #pie{
+    background-color:#434343;
+    margin-top: 10%;
+    height: 200px;
+  }
+  .interior{
+    margin-top: 1%;
+    
+  }
+  #contact{
+      margin-top: 15%;
+  }
+  #legal{
+    margin-top: 15%;
+  }
+  
+  

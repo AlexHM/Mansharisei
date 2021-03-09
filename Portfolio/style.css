@@ -1,0 +1,151 @@
+*{
+  color:white;
+  
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background:black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Estilos navegador*/
+
+#nav{
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 150px;
+}
+.enlac{
+  color:aqua;
+ 
+
+}
+.uls:hover{
+  transition: all 0.2s;
+  opacity: 60%;
+  display:flex;
+  
+  
+  
+  
+}
+.elemento{
+  list-style-type: none;
+  font-size:x-large;
+  
+  
+}
+.elemento:hover{
+  transform: scale(0.9);
+  transition:0.3s;
+  
+  
+  
+ 
+}
+/*Alejandro*/
+#alejandro{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+}
+.alex2{
+  color: aqua;
+}
+.parrafo_oculto{
+  color: white;
+}
+#ah{
+  margin-top: 2%;
+width: 20%;
+}
+
+/* Skills*/
+
+#cuadricula{
+  height: 100%;
+  border-radius: 15px;
+  padding: 5%;
+  justify-content: end;
+}
+#skill{
+  color: aqua;
+}
+#sk4{
+  margin-left: 5%;
+}.sql{
+  width: 10%;
+  margin-right: -2%;
+}
+#sqs{
+  width: 10%;
+  margin-right: -5%;
+}
+
+/*Front,back end*/
+#front{
+  
+  text-align: center;
+  height: 200px;
+  width: 500px;
+  
+  
+}
+#back{
+  
+  text-align: center;
+  height: 200px;
+  width: 500px;
+ 
+}
+.divs1{
+  color: aqua;
+}
+
+
+/*footer*/
+
+#pie{
+  background-color:#434343;
+  margin-top: 10%;
+  height: 200px;
+}
+.interior{
+  margin-top: 1%;
+  
+}
+#contact{
+    margin-top: 15%;
+}
+#legal{
+  margin-top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
