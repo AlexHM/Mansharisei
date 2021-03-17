@@ -4,8 +4,35 @@
         "Street":"Calle basalto",
         "number":615057325,
         "posstalCode":28260,
-        "city":"Galapagar"
+        "city":"Galapagar",
+        "email":"alejandrohome94@gmail.com"
+    },
+    "aboutMe":{
+        "description":"Apasionado del mundo de la informática y de los videojuegos"
+    },
+    "Education&Formation":{
+        "Education":{
+            "School":"U-tad",
+            "degree":"Grado superior en aplicaciones multiplataforma"
+        },
+        
+        "knowledge":{
+            "ProgramerLenguajes":"JavaScript, Java, Phyton, Mysql",
+            "AppDesign":"Ios&Android"
+        }
+    },
+
+    "Competencies":{
+        "lenguajes":{
+            "English": "middle",
+            "Spain":"Native"
+        }
+       
     }
+
+
+   
+    
     
     
     
