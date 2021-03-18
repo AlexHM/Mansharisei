@@ -18,7 +18,8 @@
         
         "knowledge":{
             "ProgramerLenguajes":"JavaScript, Java, Phyton, Mysql",
-            "AppDesign":"Ios&Android"
+            "AppDesign":"Ios&Android",
+            "WebApps&WebDesigner":"Front-end/Back-end"
         }
     },
 
@@ -26,9 +27,30 @@
         "lenguajes":{
             "English": "middle",
             "Spain":"Native"
+        },
+        "otherCompetencies":{
+            "License-drive": "A",
+            "License-drive2": "B"
+        },
+
+        "AditionalInformation":"Vehicle in propiery"
+    },
+
+    "DigitalCompetencies":"Java, PHP, mySQL, JavaScript, HTML, CSS",
+    
+    "LaboralExperience":{
+        "SantogalAutomovile":"Comercial section in a online shell departament.",
+        "Foster`sHollywood":"Manager in this restaurante",
+        "OtherJobs":{
+            "MRConsultors":"JUnior level",
+            "PolarisWins":"junior with responsavilities",
+            "GoogleActivate":"Manager blablabla"
         }
-       
+        
     }
+
+
+
 
 
    
