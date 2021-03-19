@@ -1,0 +1,45 @@
+<Curriculum>
+    <Informacion>
+        <Nacionalidad>Española</Nacionalidad>
+        <Telefono>666666666</Telefono>
+        <Fecha_nacimiento>14/01/1994</Fecha_nacimiento>
+        <Email>alejandrohome94@gmail.com</Email>
+        <Direccion>
+            <Calle>Basalto N5</Calle>
+            <Municipio>Galapagar</Municipio>
+            <Ciudad>Madrid</Ciudad>
+            <Pais>España</Pais>
+        </Direccion>
+    </Informacion>
+    <Educacion_Formacion>
+        <Estudios>Desarrollo de aplicaciones multiplataforma</Estudios>
+        <Lenguajes>Java, JavaScrpit,Swift,PHP</Lenguajes>
+        <SistemasOperativos>Windows, IOS, Android y Linux</SistemasOperativos>
+        <Desarrollo>Front-end/Back-end</Desarrollo>
+        <ManejoInformacion>SQL</ManejoInformacion>
+    </Educacion_Formacion>
+    <Competencias_Idiomas>
+        <IdiomaNativo>Castellano</IdiomaNativo>
+        <NivelMedio>Ingles</NivelMedio>
+        <NivelBasico>Frances</NivelBasico>
+
+        <Permisos>
+            <LicenciaCoche>CarnetB</LicenciaCoche>
+            <LicenciaMoto>CarnetA</LicenciaMoto>
+        </Permisos>
+    </Competencias_Idiomas>
+    <InformacionAdicional>
+        <Disponibilidad>Disponibilidad Inmediata</Disponibilidad>
+        <Vehiculo>Coche, moto</Vehiculo>
+    </InformacionAdicional>
+    <otrasCompetencias>
+        <Cursos>
+            <Curso1>GoogleActivate, certificado emitido por IAB Spain</Curso1>
+            <Curso2>Contabilidad</Curso2>
+        </Cursos>
+    </otrasCompetencias>
+    <ExperienciaLaboral>
+        <SantogalAutomovil>Responsable sección comercial de todas las plataformas de venta online</SantogalAutomovil>
+        <FostersHollywood>Manager de una franquicia, gestión de personal y dirección de equipo(15 personas)</FostersHollywood>
+    </ExperienciaLaboral>
+</Curriculum>
