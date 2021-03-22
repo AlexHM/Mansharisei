@@ -1,0 +1,51 @@
+{
+    "Curriculum": {
+        "Informacion": {
+            "nombre":"Alejandro",
+            "Apellidos":"Honrubia Mejias",
+            "Calle": "Calle basalto n5",
+            "Numero": 666666666,
+            "CodigoPostal": 28260,
+            "Municipio": "Galapagar",
+            "Ciudad": "Madrid",
+            "Pais": "España",
+            "email": "alejandrohome94@gmail.com"
+        },
+        "Sobre mi": {
+            "description": "Apasionado del mundo de la informática y de los videojuegos"
+        },
+        "Educacion_Formacion": {
+            "Educacion": {
+                "Universidad": "U-tad",
+                "GradoSuperior": "Grado superior en aplicaciones multiplataforma",
+                "Curso": "GoogleActivate, certificado emitido por IAB Spain",
+                "Curso2": "Contabilidad"
+            },
+            "Conocimientos": {
+                "LenguajesProgramacion": "JavaScript, Java, Phyton, Mysql",
+                "SistemasOperativos": "Ios, Android, Windows y Linux",
+                "Desarrollo": "Front-end/Back-end"
+            }
+        },
+        "Competencias": {
+            "Idiomas": {
+                "Ingles": "Medio",
+                "Castellano": "Nativo"
+            },
+            "OtrasCompetencias": {
+                "LicenciaCoche": "A",
+                "LicenciaMoto": "B"
+            },
+            "InformacionAdicional": "Vehicle in propiery"
+        },
+        "CompetenciasDigitales": "Java, PHP, mySQL, JavaScript, HTML, CSS y Phyton",
+        "ExperienciaLaboral": {
+            "SantogalAutomovil": "Responsable sección comercial de todas las plataformas de venta online.",
+            "FostersHollywood": "Manager de una franquicia, gestión de personal y dirección de equipo(15 personas)",
+            "OtrosTrabajos": {
+                "MRConsultors": "Contabilidad junior",
+                "PolarisWins": "Responsable contabilidad"
+            }
+        }
+    }
+}
