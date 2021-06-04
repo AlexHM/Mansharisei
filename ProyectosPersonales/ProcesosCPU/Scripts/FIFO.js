@@ -172,334 +172,336 @@ function generarTabla() {
     let TR2 = 0;
     let TR3 = 0;
 
-    if (auxProceso1 < auxProceso2 && auxProceso1 < auxProceso3) {
+
+    if (auxProceso1L < auxProceso2L && auxProceso1L < auxProceso3L) {
+
+        //Inicio
         inicio1.innerHTML = "0";
 
-        ////Comparación-Fin-tiempo ejecucción
+        //fin
         fin1.innerHTML = auxProceso1;
 
-        //Tiempo Respuesta
+        //Tiempo respuesta
         tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
 
-        //Tiempo Espera
-        tiempoEspera1.innerHTML = ((auxProceso1 - auxProceso1L) - auxProceso1);
+        //Tiempo espera
+        tiempoEspera1.innerHTML = (auxProceso1 - auxProceso1L) - auxProceso1;
 
-        //Penalización
+        //penalizacion
         penalizacion1.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
 
-        if (auxProceso2 < auxProceso3) {
+        if (auxProceso2L < auxProceso3L) {
+            //Proceso 2
+            //Inicio
             inicio2.innerHTML = auxProceso1;
-            inicio3.innerHTML = auxProceso1 + auxProceso2;
 
-            ////Comparación-Fin-tiempo ejecucción
+            //fin
             fin2.innerHTML = auxProceso1 + auxProceso2;
+
+            //Tiempo respuesta
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+
+            //Tiempo espera
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+
+            //penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+
+            //Proceso 3
+            //Inicio
+            inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+            //fin
             fin3.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
 
-            //Tiempo Respuesta
-            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+            //Tiempo respuesta
             tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
 
-            //Tiempo Espera
-            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+            //Tiempo espera
             tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
 
-            //Penalización
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+            //penalizacion
             penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
 
 
-        } else if (auxProceso3 < auxProceso2) {
+        } else if (auxProceso3L < auxProceso1L) {
+
+            //PRoceso3
+            //Inicio
             inicio3.innerHTML = auxProceso1;
-            inicio2.innerHTML = auxProceso1 + auxProceso3;
 
-            ////Comparación-Fin-tiempo ejecucción
+            //fin
             fin3.innerHTML = auxProceso1 + auxProceso3;
-            fin2.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
 
-            //Tiempo Respuesta
+            //Tiempo respuesta
             tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso3) - auxProceso3L;
-            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L;
 
-            //Tiempo Espera
+            //Tiempo espera
             tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) - auxProceso3;
-            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
 
-            //Penalización
-            penalizacion3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
-
-        }
-
-    } else if (auxProceso2 < auxProceso1 && auxProceso2 < auxProceso3) {
-        inicio2.innerHTML = "0";
-
-        ////Comparación-Fin-tiempo ejecucción
-        fin2.innerHTML = auxProceso2;
-
-        //Tiempo Respuesta
-        tiempoRespuesta2.innerHTML = auxProceso2 - auxProceso2L;
-
-        //Tiempo Espera
-        tiempoEspera2.innerHTML = (auxProceso2 - auxProceso2L) - auxProceso2;
-
-        //Penalización
-        penalizacion2.innerHTML = (auxProceso2 - auxProceso2L) / auxProceso2;
-
-        if (auxProceso1 < auxProceso3) {
-            inicio1.innerHTML = auxProceso2;
-            inicio3.innerHTML = auxProceso1 + auxProceso2;
-
-            ////Comparación-Fin-tiempo ejecucción
-            fin1.innerHTML = auxProceso2 + auxProceso1;
-            fin3.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
-
-            //Tiempo Respuesta
-            tiempoRespuesta1.innerHTML = (auxProceso2 + auxProceso1) - auxProceso1L;
-            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
-
-            //Tiempo Espera
-            tiempoEspera1.innerHTML = ((auxProceso2 + auxProceso1) - auxProceso1L) - auxProceso1;
-            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
-
-            //Penalización
-            penalizacion1.innerHTML = ((auxProceso2 + auxProceso1) - auxProceso1L) / auxProceso1;
-            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
-
-        } else if (auxProceso3 < auxProceso1) {
-            inicio3.innerHTML = auxProceso2;
-            inicio1.innerHTML = auxProceso2 + auxProceso3;
-
-            ////Comparación-Fin-tiempo ejecucción
-            fin3.innerHTML = auxProceso1 + auxProceso3;
-            fin1.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
-
-            //Tiempo Respuesta
-            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso3) - auxProceso3L;
-            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L;
-
-            //Tiempo Espera
-            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) - auxProceso3;
-            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) - auxProceso1;
-
-            //Penalización
-            penalizacion3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
-            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) / auxProceso1;
-
-        }
-
-    } else if (auxProceso3 < auxProceso1 && auxProceso3 < auxProceso2) {
-        inicio3.innerHTML = "0";
-
-        ////Comparación-Fin-tiempo ejecucción
-        fin3.innerHTML = auxProceso3;
-
-        //Tiempo Respuesta
-        tiempoRespuesta3.innerHTML = auxProceso3 - auxProceso3L;
-
-        //Tiempo Espera
-        tiempoEspera3.innerHTML = (auxProceso3 - auxProceso3L) - auxProceso3;
-
-        //Penalización
-        penalizacion3.innerHTML = (auxProceso3 - auxProceso3L) / auxProceso3;
-
-        if (auxProceso2 < auxProceso1) {
-            inicio2.innerHTML = auxProceso3;
-            inicio1.innerHTML = auxProceso3 + auxProceso2;
-
-            ////Comparación-Fin-tiempo ejecucción
-            fin2.innerHTML = auxProceso2 + auxProceso3;
-            fin1.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
-
-            //Tiempo Respuesta
-            tiempoRespuesta2.innerHTML = (auxProceso2 + auxProceso3) - auxProceso2L;
-            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
-
-            //Tiempo Espera
-            tiempoEspera2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
-            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso1;
-
-            //Penalización
-            penalizacion2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
-            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso1;
-
-
-        } else if (auxProceso1 < auxProceso2) {
-            inicio1.innerHTML = auxProceso3;
-            inicio2.innerHTML = auxProceso3 + auxProceso1;
-
-            ////Comparación-Fin-tiempo ejecucción
-            fin1.innerHTML = auxProceso1 + auxProceso3;
-            fin2.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
-
-            //Tiempo Respuesta
-            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso3) - auxProceso1L;
-            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L;
-
-            //Tiempo Espera
-            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso1L) - auxProceso1;
-            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
-
-            //Penalización
-            penalizacion1.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso1L) / auxProceso1;
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
-        }
-
-    } else if (auxProceso1 == auxProceso2 && auxProceso1 < auxProceso3) {
-
-        if (auxProceso1L < auxProceso2L) {
-            //Proceso 1
-            //Inicio
-            inicio1.innerHTML = "0";
-
-            //fin
-            fin1.innerHTML = auxProceso1;
-
-            //Tiempo respuesta
-            tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
-
-            //tiempo espera
-            tiempoEspera1.innerHTML = (auxProceso1 - auxProceso1L) - auxProceso1;
-
-            //Penalizacion
-            penalizacion1.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
-
-            //Proceso2
-            //Inicio
-            inicio2.innerHTML = auxProceso1;
-
-            //fin
-            fin2.innerHTML = (auxProceso1 + auxProceso2);
-
-            //Tiempo respuesta
-            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
-
-            //tiempo espera
-            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
-
-            //Penalizacion
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
-
-            //Proceso3
-            //Inicio
-            inicio3.innerHTML = auxProceso1 + auxProceso2;
-
-            //fin
-            fin3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3);
-
-            //Tiempo respuesta
-            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
-
-            //tiempo espera
-            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
-
-            //Penalizacion
-            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
-
-
-
-
-        } else if (auxProceso2L < auxProceso1L) {
+            //penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
 
             //Proceso 2
             //Inicio
-            inicio2.innerHTML = "0";
+            inicio2.innerHTML = auxProceso1 + auxProceso3;
 
             //fin
-            fin2.innerHTML = auxProceso2;
+            fin2.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
 
             //Tiempo respuesta
-            tiempoRespuesta2.innerHTML = auxProceso2 - auxProceso2L;
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
 
-            //tiempo espera
-            tiempoEspera2.innerHTML = (auxProceso2 - auxProceso2L) - auxProceso2;
+            //Tiempo espera
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
 
-            //Penalizacion
-            penalizacion2.innerHTML = (auxProceso2 - auxProceso2L) / auxProceso2;
+            //penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
+        }
 
-            //Proceso1
+
+
+    } else if (auxProceso2L < auxProceso1L && auxProceso2L < auxProceso3L) {
+
+        //Inicio
+        inicio2.innerHTML = "0";
+
+        //fin
+        fin2.innerHTML = auxProceso2;
+
+        //Tiempo respuesta
+        tiempoRespuesta2.innerHTML = auxProceso2 - auxProceso2L;
+
+        //Tiempo espera
+        tiempoEspera2.innerHTML = (auxProceso2 - auxProceso2L) - auxProceso2;
+
+        //penalizacion
+        penalizacion2.innerHTML = (auxProceso2 - auxProceso2L) / auxProceso2;
+
+        if (auxProceso1L < auxProceso3L) {
+
+            //Proceso 1
             //Inicio
             inicio1.innerHTML = auxProceso2;
 
             //fin
-            fin1.innerHTML = (auxProceso1 + auxProceso2);
+            fin1.innerHTML = auxProceso1 + auxProceso2;
 
             //Tiempo respuesta
             tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2) - auxProceso1L;
 
-            //tiempo espera
+            //Tiempo espera
             tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso1L) - auxProceso1;
 
-            //Penalizacion
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso1L) / auxProceso1;
+            //penalizacion
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso1L) / auxProceso1;
 
-            //Proceso3
+            //Proceso 3
             //Inicio
             inicio3.innerHTML = auxProceso1 + auxProceso2;
 
             //fin
-            fin3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3);
+            fin3.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
 
             //Tiempo respuesta
             tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
 
-            //tiempo espera
+            //Tiempo espera
             tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
 
-            //Penalizacion
-            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
+            //penalizacion
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
 
-        }
-        else if (auxProceso1L == auxProceso2L) {
 
-            //Proceso1
+        } else if (auxProceso3L < auxProceso1L) {
+
+            //PRoceso3
             //Inicio
-            inicio1.innerHTML = "0";
+            inicio3.innerHTML = auxProceso3;
 
             //fin
-            fin1.innerHTML = auxProceso1;
+            fin3.innerHTML = auxProceso2 + auxProceso3;
 
             //Tiempo respuesta
-            tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
+            tiempoRespuesta3.innerHTML = (auxProceso2 + auxProceso3) - auxProceso3L;
 
-            //tiempo espera
-            tiempoEspera3.innerHTML = (auxProceso1 - auxProceso1L) - auxProceso1;
+            //Tiempo espera
+            tiempoEspera3.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
 
-            //Penalizacion
-            penalizacion3.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
+            //penalizacion
+            penalizacion2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
+
+            //Proceso 1
+            //Inicio
+            inicio1.innerHTML = auxProceso2 + auxProceso3;
+
+            //fin
+            fin1.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo respuesta
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L;
+
+            //Tiempo espera
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) - auxProceso1;
+
+            //penalizacion
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) / auxProceso1;
+        }
+
+
+
+
+
+    } else if (auxProceso3L < auxProceso1L && auxProceso3L < auxProceso2L) {
+
+        //Inicio
+        inicio3.innerHTML = "0";
+
+        //fin
+        fin3.innerHTML = auxProceso3;
+
+        //Tiempo respuesta
+        tiempoRespuesta3.innerHTML = auxProceso3 - auxProceso3L;
+
+        //Tiempo espera
+        tiempoEspera3.innerHTML = (auxProceso3 - auxProceso3L) - auxProceso3;
+
+        //penalizacion
+        penalizacion3.innerHTML = (auxProceso3 - auxProceso3L) / auxProceso3;
+
+
+
+        if (auxProceso1L < auxProceso2L) {
+
+            //Proceso 1
+            //Inicio
+            inicio1.innerHTML = auxProceso3;
+
+            //fin
+            fin1.innerHTML = auxProceso1 + auxProceso3;
+
+            //Tiempo respuesta
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso3) - auxProceso1L;
+
+            //Tiempo espera
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso1L) - auxProceso1;
+
+            //penalizacion
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso1L) / auxProceso1;
 
             //Proceso 2
             //Inicio
-            inicio2.innerHTML = auxProceso1;
+            inicio2.innerHTML = auxProceso1 + auxProceso3;
 
             //fin
-            fin2.innerHTML = (auxProceso1 + auxProceso2);
+            fin2.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
 
             //Tiempo respuesta
-            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L;
 
-            //tiempo espera
-            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+            //Tiempo espera
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
 
-            //Penalizacion
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+            //penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
 
-            //Proceso3
+
+        } else if (auxProceso2L < auxProceso1L) {
+
+
+
+
+
+            //PRoceso2
             //Inicio
-            inicio3.innerHTML = auxProceso1 + auxProceso2;
+            inicio2.innerHTML = auxProceso3;
 
             //fin
-            fin3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3);
+            fin2.innerHTML = auxProceso2 + auxProceso3;
 
             //Tiempo respuesta
-            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+            tiempoRespuesta2.innerHTML = (auxProceso2 + auxProceso3) - auxProceso2L;
 
-            //tiempo espera
-            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+            //Tiempo espera
+            tiempoEspera2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
 
-            //Penalizacion
-            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
+            //penalizacion
+            penalizacion2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
+
+            //Proceso 1
+            //Inicio
+            inicio1.innerHTML = auxProceso2 + auxProceso3;
+
+            //fin
+            fin1.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo respuesta
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L;
+
+            //Tiempo espera
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) - auxProceso1;
+
+            //penalizacion
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) / auxProceso1;
         }
+
+
+
+
+
+    } else if (auxProceso1L == auxProceso2L && auxProceso1L < auxProceso3L) {
+        //Inicio
+        inicio1.innerHTML = "0";
+
+        //fin
+        fin1.innerHTML = auxProceso1;
+
+        //Tiempo respuesta
+        tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
+
+        //Tiempo espera
+        tiempoEspera1.innerHTML = (auxProceso1 - auxProceso1L) - auxProceso1;
+
+        //penalizacion
+        penalizacion1.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
+
+        //Proceso 2
+        //Inicio
+        inicio2.innerHTML = auxProceso1;
+
+        //fin
+        fin2.innerHTML = auxProceso1 + auxProceso2;
+
+        //Tiempo respuesta
+        tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+
+        //Tiempo espera
+        tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+
+        //penalizacion
+        penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+
+        //Proceso 3
+        //Inicio
+        inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+        //fin
+        fin3.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+        //Tiempo respuesta
+        tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+        //Tiempo espera
+        tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+
+        //penalizacion
+        penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
+
+
+
     }
+
+
 
 
     //boton para generar Grafica
