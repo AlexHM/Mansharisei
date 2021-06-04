@@ -1,4 +1,7 @@
 function generarTabla() {
+
+
+
     let tabla = document.getElementById("tabla");
     console.log(tabla);
 
@@ -224,7 +227,7 @@ function generarTabla() {
             penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
 
 
-        } else if (auxProceso3L < auxProceso1L) {
+        } else if (auxProceso3L < auxProceso2L) {
 
             //PRoceso3
             //Inicio
@@ -513,6 +516,13 @@ function generarTabla() {
     textoBtnGrafica = document.createTextNode("Generar gráfica");
     btnGrafica.appendChild(textoBtnGrafica);
     Grafica.appendChild(btnGrafica);
+
+
+    //Ocultar boton generar tabla
+    let btnTabla = document.getElementById("btnEnviar");
+    btnTabla.style.display = "none";
+
+
 }
 
 
@@ -571,11 +581,20 @@ function crearProcesos() {
     proceso.appendChild(btnEnviar);
 
 
+    //Ocultar boton generar procesos
+    let btnProceso = document.getElementById("btnProcesos");
+    btnProceso.style.display = "none";
+
+
+
 }
 
 var aux = 35;
 
 function generarGrafica() {
+
+
+
     let grafica = document.getElementById("pintaGrafica").style.display = "block";
     let auxProceso1L = Number.parseInt(document.getElementById("1").value);
     let auxProceso2L = Number.parseInt(document.getElementById("2").value);
@@ -598,7 +617,7 @@ function generarGrafica() {
             prueba1.appendChild(casilla);
         }
 
-        if (auxProceso2L < auxProceso3L3) {
+        if (auxProceso2L < auxProceso3L) {
 
             //CASILLAS VACIAS A PROCESO 2
 
@@ -619,7 +638,6 @@ function generarGrafica() {
             for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
                 let casillaVacia = document.createElement("div");
                 casillaVacia.setAttribute("class", "casilla2");
-
                 prueba3.appendChild(casillaVacia);
             }
 
@@ -631,7 +649,7 @@ function generarGrafica() {
 
             }
 
-        } else if (auxProceso3L < auxProceso2Loceso2) {
+        } else if (auxProceso3L < auxProceso2L) {
             //CASILLAS VACIAS A PROCESO 3
 
             for (let i = 0; i < auxProceso1; i++) {
@@ -943,4 +961,27 @@ function generarGrafica() {
         }
 
     }
+
+
+    //Ocultar boton generar gráfica
+    let btnGrafica2 = document.getElementById("btnGrafica");
+    btnGrafica2.style.display = "none";
+
+    //Refrescar pagina llamada
+    let btnRefresco = document.createElement("button");
+    let textoBtnRefresco = document.createTextNode("Nueva simulación")
+    btnRefresco.setAttribute("onclick", "recargar();")
+    btnRefresco.setAttribute("id", "btnNuevaSimulacion");
+    btnRefresco.style.marginTop = "1%";
+
+    let divProceso = document.getElementById("info");
+    btnRefresco.appendChild(textoBtnRefresco);
+    divProceso.appendChild(btnRefresco);
+}
+
+
+
+
+function recargar() {
+    location.reload();
 }

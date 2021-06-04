@@ -217,3 +217,14 @@ h6, .prueba {
     width: auto;
     height: auto;
 }
+
+#btnNuevaSimulacion{
+    width: 8%;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    
+    
+}

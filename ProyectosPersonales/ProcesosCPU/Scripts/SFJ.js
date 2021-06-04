@@ -511,6 +511,10 @@ function generarTabla() {
     textoBtnGrafica = document.createTextNode("Generar gráfica");
     btnGrafica.appendChild(textoBtnGrafica);
     Grafica.appendChild(btnGrafica);
+
+    //Ocultar boton generar tabla
+    let btnTabla = document.getElementById("btnEnviar");
+    btnTabla.style.display = "none";
 }
 
 
@@ -567,6 +571,10 @@ function crearProcesos() {
     btnEnviar.setAttribute("id", "btnEnviar");
     btnEnviar.appendChild(textoBtnEnviar);
     proceso.appendChild(btnEnviar);
+
+    //Ocultar boton generar procesos
+    let btnProceso = document.getElementById("btnProcesos");
+    btnProceso.style.display = "none";
 
 
 }
@@ -935,8 +943,28 @@ function generarGrafica() {
                 casilla3.setAttribute("class", "casilla");
                 prueba3.appendChild(casilla3);
             }
-
         }
-
     }
+
+    //Ocultar boton generar gráfica
+    let btnGrafica2 = document.getElementById("btnGrafica");
+    btnGrafica2.style.display = "none";
+
+     //Refrescar pagina llamada
+     let btnRefresco = document.createElement("button");
+     let textoBtnRefresco = document.createTextNode("Nueva simulación")
+     btnRefresco.setAttribute("onclick", "recargar();")
+     btnRefresco.setAttribute("id", "btnNuevaSimulacion");
+     btnRefresco.style.marginTop = "1%";
+ 
+     let divProceso = document.getElementById("info");
+     btnRefresco.appendChild(textoBtnRefresco);
+     divProceso.appendChild(btnRefresco);
+
+
+}
+
+
+function recargar() {
+    location.reload();
 }
