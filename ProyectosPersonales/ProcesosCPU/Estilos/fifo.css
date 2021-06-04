@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-decoration: none;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 150px;
+}
+
+.elemento {
+    list-style-type: none;
+    font-size: x-large;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.elemento:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+#info {
+    margin-bottom: 0px;
+    text-align: center;
+}
+#tabla{
+    margin-top: 2%;
+   
+}
+th{
+    border: 1px solid cornflowerblue;
+}
+
+

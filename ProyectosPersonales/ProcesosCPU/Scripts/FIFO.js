@@ -1,0 +1,416 @@
+
+
+
+
+
+
+function generarTabla() {
+    let tabla = document.getElementById("tabla");
+    console.log(tabla);
+
+    //Cabecera tabla
+    let cabecera = document.createElement("tr");
+    tabla.appendChild(cabecera);
+
+    // titulo Proceso
+    let proceso = document.createElement("th");
+    proceso.setAttribute("class", "ths");
+    let textoProceso = document.createTextNode("Proceso");
+
+    proceso.appendChild(textoProceso);
+    cabecera.appendChild(proceso);
+
+    //Inicio
+    let inicio = document.createElement("th");
+    inicio.setAttribute("class", "ths");
+    let textoInicio = document.createTextNode("Inicio");
+
+    inicio.appendChild(textoInicio);
+    cabecera.appendChild(inicio);
+
+    //Fin
+    let fin = document.createElement("th");
+    fin.setAttribute("class", "ths");
+    let textoFin = document.createTextNode("Fin");
+
+    fin.appendChild(textoFin);
+    cabecera.appendChild(fin);
+
+    //Tiempo respuesta
+    let tiempoRespuesta = document.createElement("th");
+    tiempoRespuesta.setAttribute("class", "ths");
+    let textoTiempoRespuesta = document.createTextNode("Tiempo Respuesta");
+
+    tiempoRespuesta.appendChild(textoTiempoRespuesta);
+    cabecera.appendChild(tiempoRespuesta);
+
+    //Tiempo Espera
+    let tiempoEspera = document.createElement("th");
+    tiempoEspera.setAttribute("class", "ths");
+    let textoTiempoEspera = document.createTextNode("Tiempo Espera");
+
+    tiempoEspera.appendChild(textoTiempoEspera);
+    cabecera.appendChild(tiempoEspera);
+
+    //Penalizacion
+
+    let penalizacion = document.createElement("th");
+    penalizacion.setAttribute("class", "ths");
+    let textoPenalizacion = document.createTextNode("Penalización");
+
+    penalizacion.appendChild(textoPenalizacion);
+    cabecera.appendChild(penalizacion);
+
+    ///////////////
+    //PROCESO 1
+    let tr1 = document.createElement("tr");
+    tabla.appendChild(tr1);
+
+    //Proceso1
+    let proceso1 = document.createElement("td");
+    let textoProceso1 = document.createTextNode("1");
+
+    proceso1.appendChild(textoProceso1);
+    tr1.appendChild(proceso1);
+
+    //inicio-proceso1
+    let inicio1 = document.createElement("td");
+    tr1.appendChild(inicio1);
+
+    //fin-proceso1
+    let fin1 = document.createElement("td");
+    tr1.appendChild(fin1);
+
+
+    //TiempoRespuesta-proceso1
+    let tiempoRespuesta1 = document.createElement("td");
+    tr1.appendChild(tiempoRespuesta1);
+
+    //TiempoEspera-proceso1
+    let tiempoEspera1 = document.createElement("td");
+    tr1.appendChild(tiempoEspera1);
+
+    //Penalizacion-proceso1
+    let penalizacion1 = document.createElement("td");
+    tr1.appendChild(penalizacion1);
+
+    ////////////
+    //PROCESO 2
+
+    let tr2 = document.createElement("tr");
+    tabla.appendChild(tr2);
+
+    //Proceso2
+    let proceso2 = document.createElement("td");
+    let textoProceso2 = document.createTextNode("2");
+
+    proceso2.appendChild(textoProceso2);
+    tr2.appendChild(proceso2);
+
+    //inicio-proceso1
+    let inicio2 = document.createElement("td");
+    tr2.appendChild(inicio2);
+
+    //fin-proceso1
+    let fin2 = document.createElement("td");
+    tr2.appendChild(fin2);
+
+
+    //TiempoRespuesta-proceso1
+    let tiempoRespuesta2 = document.createElement("td");
+    tr2.appendChild(tiempoRespuesta2);
+
+    //TiempoEspera-proceso1
+    let tiempoEspera2 = document.createElement("td");
+    tr2.appendChild(tiempoEspera2);
+
+    //Penalizacion-proceso1
+    let penalizacion2 = document.createElement("td");
+    tr2.appendChild(penalizacion2);
+
+    ////////////
+    //PROCESO 3
+
+    let tr3 = document.createElement("tr");
+    tabla.appendChild(tr3);
+
+    //Proceso2
+    let proceso3 = document.createElement("td");
+    let textoProceso3 = document.createTextNode("3");
+
+    proceso3.appendChild(textoProceso3);
+    tr3.appendChild(proceso3);
+
+    //inicio-proceso1
+    let inicio3 = document.createElement("td");
+    tr3.appendChild(inicio3);
+
+    //fin-proceso1
+    let fin3 = document.createElement("td");
+    tr3.appendChild(fin3);
+
+
+    //TiempoRespuesta-proceso1
+    let tiempoRespuesta3 = document.createElement("td");
+    tr3.appendChild(tiempoRespuesta3);
+
+    //TiempoEspera-proceso1
+    let tiempoEspera3 = document.createElement("td");
+    tr3.appendChild(tiempoEspera3);
+
+    //Penalizacion-proceso1
+    let penalizacion3 = document.createElement("td");
+    tr3.appendChild(penalizacion3);
+
+
+    //COMPARACIONES
+    let auxProceso1 = Number.parseInt(document.getElementById("4").value);
+    let auxProceso2 = Number.parseInt(document.getElementById("5").value)
+    let auxProceso3 = Number.parseInt(document.getElementById("6").value);
+    let auxProceso1L = Number.parseInt(document.getElementById("1").value);
+    let auxProceso2L = Number.parseInt(document.getElementById("2").value);
+    let auxProceso3L = Number.parseInt(document.getElementById("3").value);
+
+    let TR1 = 0;
+    let TR2 = 0;
+    let TR3 = 0;
+
+    if (auxProceso1 < auxProceso2 && auxProceso1 < auxProceso3) {
+        inicio1.innerHTML = "0";
+        
+        ////Comparación-Fin-tiempo ejecucción
+        fin1.innerHTML = auxProceso1;
+
+        //Tiempo Respuesta
+        tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
+
+        //Tiempo Espera
+        tiempoEspera1.innerHTML = ((auxProceso1 - auxProceso1L) - auxProceso1);
+
+        //Penalización
+        penalizacion1.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
+
+        if (auxProceso2 < auxProceso3) {
+            inicio2.innerHTML = auxProceso1;
+            inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+            ////Comparación-Fin-tiempo ejecucción
+            fin2.innerHTML = auxProceso1 + auxProceso2;
+            fin3.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo Respuesta
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+            //Tiempo Espera
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+
+            //Penalización
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
+
+
+        } else if (auxProceso3 < auxProceso2) {
+            inicio3.innerHTML = auxProceso1;
+            inicio2.innerHTML = auxProceso1 + auxProceso3;
+
+            ////Comparación-Fin-tiempo ejecucción
+            fin3.innerHTML = auxProceso1 + auxProceso3;
+            fin2.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo Respuesta
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso3) - auxProceso3L;
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L;
+
+            //Tiempo Espera
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) - auxProceso3;
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
+
+            //Penalización
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
+
+        }
+
+    } else if (auxProceso2 < auxProceso1 && auxProceso2 < auxProceso3) {
+        inicio2.innerHTML = "0";
+
+        ////Comparación-Fin-tiempo ejecucción
+        fin2.innerHTML = auxProceso2;
+
+        //Tiempo Respuesta
+        tiempoRespuesta2.innerHTML = auxProceso2 - auxProceso2L;
+
+        //Tiempo Espera
+        tiempoEspera2.innerHTML = (auxProceso2 - auxProceso2L) - auxProceso2;
+
+        //Penalización
+        penalizacion2.innerHTML = (auxProceso2 - auxProceso2L) / auxProceso2;
+
+        if (auxProceso1 < auxProceso3) {
+            inicio1.innerHTML = auxProceso2;
+            inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+            ////Comparación-Fin-tiempo ejecucción
+            fin1.innerHTML = auxProceso2 + auxProceso1;
+            fin3.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo Respuesta
+            tiempoRespuesta1.innerHTML = (auxProceso2 + auxProceso1) - auxProceso1L;
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+            //Tiempo Espera
+            tiempoEspera1.innerHTML = ((auxProceso2 + auxProceso1) - auxProceso1L) - auxProceso1;
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+
+            //Penalización
+            penalizacion1.innerHTML = ((auxProceso2 + auxProceso1) - auxProceso1L) / auxProceso1;
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
+
+        } else if (auxProceso3 < auxProceso1) {
+            inicio3.innerHTML = auxProceso2;
+            inicio1.innerHTML = auxProceso2 + auxProceso3;
+
+            ////Comparación-Fin-tiempo ejecucción
+            fin3.innerHTML = auxProceso1 + auxProceso3;
+            fin1.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo Respuesta
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso3) - auxProceso3L;
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L;
+
+            //Tiempo Espera
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) - auxProceso3;
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) - auxProceso1;
+
+            //Penalización
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) / auxProceso1;
+
+        }
+
+    } else if (auxProceso3 < auxProceso1 && auxProceso3 < auxProceso2) {
+        inicio3.innerHTML = "0";
+
+        ////Comparación-Fin-tiempo ejecucción
+        fin3.innerHTML = auxProceso3;
+
+        //Tiempo Respuesta
+        tiempoRespuesta3.innerHTML = auxProceso3 - auxProceso3L;
+
+        //Tiempo Espera
+        tiempoEspera3.innerHTML = (auxProceso3 - auxProceso3L) - auxProceso3;
+
+        //Penalización
+        penalizacion3.innerHTML = (auxProceso3 - auxProceso3L) / auxProceso3;
+
+        if (auxProceso2 < auxProceso1) {
+            inicio2.innerHTML = auxProceso3;
+            inicio1.innerHTML = auxProceso3 + auxProceso2;
+
+            ////Comparación-Fin-tiempo ejecucción
+            fin2.innerHTML = auxProceso2 + auxProceso3;
+            fin1.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo Respuesta
+            tiempoRespuesta2.innerHTML = (auxProceso2 + auxProceso3) - auxProceso2L;
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+            //Tiempo Espera
+            tiempoEspera2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso1;
+
+            //Penalización
+            penalizacion2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso1;
+
+
+        } else if (auxProceso1 < auxProceso2) {
+            inicio1.innerHTML = auxProceso3;
+            inicio2.innerHTML = auxProceso3 + auxProceso1;
+
+            ////Comparación-Fin-tiempo ejecucción
+            fin1.innerHTML = auxProceso1 + auxProceso3;
+            fin2.innerHTML = auxProceso1 + auxProceso2 + auxProceso3;
+
+            //Tiempo Respuesta
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso3) - auxProceso1L;
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L;
+
+            //Tiempo Espera
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso1L) - auxProceso1;
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) - auxProceso2;
+
+            //Penalización
+            penalizacion1.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso1L) / auxProceso1;
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
+        }
+
+    }
+
+    //boton para generar Grafica
+    let Grafica=document.getElementById("grafica");
+    btnGrafica=document.createElement("button");
+    btnGrafica.setAttribute("id","btnGrafica");
+    btnGrafica.setAttribute("onclick","generarGrafica();");
+    textoBtnGrafica=document.createTextNode("Generar gráfica");
+    btnGrafica.appendChild(textoBtnGrafica);
+    Grafica.appendChild(btnGrafica);
+}
+
+
+function crearProcesos() {
+
+
+    let proceso = document.getElementById("procesosCreados");
+    console.log(proceso);
+
+    let count2 = 1;
+    let count3 = 4;
+    
+    for (let i = 0; i < 3; i++) {
+        //Etiqueta del proceso
+        let h5 = document.createElement("h5");
+        proceso.appendChild(h5);
+        let textoH5 = document.createTextNode(`proceso ${count2}`);
+        h5.appendChild(textoH5);
+
+
+        //Tiempo de llegada
+        let h6_1 = document.createElement("h6");
+        h6_1.setAttribute("class","TE-TL")
+        let textoH6_1 = document.createTextNode("Tiempo llegada:")
+        let input = document.createElement("input");
+        input.setAttribute("type", "number");
+        input.setAttribute("id", count2);
+
+
+        proceso.appendChild(h6_1);
+        h6_1.appendChild(textoH6_1);
+        proceso.appendChild(input);
+
+        //Tiempo de ejecucción
+        let h6_2 = document.createElement("h6");
+        h6_2.setAttribute("class","TE-TL")
+        let textoH6_2 = document.createTextNode("Tiempo Ejecución:")
+        let input2 = document.createElement("input");
+        input2.setAttribute("type", "number");
+        input2.setAttribute("id", count3);
+
+        proceso.appendChild(h6_2);
+        h6_2.appendChild(textoH6_2);
+        proceso.appendChild(input2);
+        count2++;
+        count3++;
+    }
+    //boton para generar Table
+    let btnEnviar = document.createElement("button");
+    btnEnviar.setAttribute("id", "btnEnviar");
+    btnEnviar.setAttribute("onclick", "generarTabla();");
+    textoBtnEnviar = document.createTextNode("Generar tabla");
+    btnEnviar.appendChild(textoBtnEnviar);
+    proceso.appendChild(btnEnviar);
+    
+    
+}

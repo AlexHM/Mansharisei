@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="/Scripts/FIFO.js"></script>
+    <link rel="stylesheet" href="/Estilos/fifo.css">
+    <title>Procesos || FIFO</title>
+</head>
+
+<body>
+
+    <!--Nav-->
+    <div id="nav">
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="/htmls/home.html">Home</a></li>
+        </ul>
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="/htmls/sjf.html">SJF</a></li>
+        </ul>
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="/htmls/fifo.html">FIFO</a></li>
+        </ul>
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="/htmls/roundRobin.html">Round Robin</a></li>
+        </ul>
+    </div>
+    <!--Informacion general del proceso-->
+    <div id="info">
+        <h3 id="name">First in First out</h3>
+        <p>El primero que llega es el primero en empezar.Se introducirán los procesos de forma consecutiva por tiempo de
+            llegada.<br>
+            Esta simulación no contempla prioridades.Se introducirán 5 procesos.</p>
+    </div>
+
+    <!--Añadir procesos-->
+    <div id="cargapProcesos">
+        
+        <h6>Tiempo de ejecución: </h6><input type="number" id="tiempoEjecucion"><br>
+        <button style="margin-top: 1%;" id="btnNumProcesos" onclick="generarTabla();">Confirmar</button>
+
+
+        
+    </div>
+
+    <!--Tabla generada dínamca-->
+    <div id="procesosCreados">
+        <table id="tabla">
+            <tr>
+                <th>Proceso</th>
+                <th>Tiempo llegada</th>
+                <th>Tiempo ejecución</th>
+                <th>Inicio</th>
+                <th>Fin</th>
+                <th>tiempo respuesta</th>
+                <th>Tiempo espera</th>
+                <th>Penalizacion</th>
+                
+            </tr>
+
+
+
+
+        </table>
+
+    </div>
+    
+  
+    
+    
+
+
+
+
+
+
+
+</body>
+
+</html>

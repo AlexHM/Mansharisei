@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="/Scripts/SFJ.js"></script>
+    <link rel="stylesheet" href="/Estilos/sjf.css">
+    <title>Procesos || SJF</title>
+</head>
+
+<body>
+
+    <!--Nav-->
+    <div id="nav">
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="home.html">Home</a></li>
+        </ul>
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="sjf.html">SJF</a></li>
+        </ul>
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="fifo.html">FIFO</a></li>
+        </ul>
+        <ul class="uls">
+            <li class="elemento"><a class="enlac" href="roundRobin.html">Round Robin</a></li>
+        </ul>
+    </div>
+    <!--Informacion general del proceso-->
+    <div id="info">
+        <h3 id="name">Shorted Job First</h3>
+        <p>El proceso con menor tiempo de ejecución, es el primero en ser atendido.</p>
+        <p>Pulsa el botón "Crear procesos" para generar una simulación de 3 procesos.</p>
+        
+    </div>
+
+    <!--Añadir procesos-->
+    <div id="cargapProcesos">
+
+        <button id="btnProcesos" onclick="crearProcesos();">Generar procesos</button>
+        <div id="procesosCreados">
+
+        </div>
+
+
+    </div>
+
+    <!--Tabla generada dínamca-->
+
+    <div id="divTabla">
+        <table id="tabla">
+        </table>
+
+    </div>
+
+    <div id="divGrafica">
+
+        <div id="grafica">
+
+        </div>
+    </div>
+
+<!--Div general de la grafica-->
+    <div id="pintaGrafica">
+
+        <div id="grafic1-3">
+            <div id="grafic">
+                <h6>1</h6>
+                <h6>2</h6>
+                <h6>3</h6>
+            </div>
+            <div class="grafic3">
+
+                <!-- generar con JS-->
+                <div id="prueba1">
+                    
+               
+                    
+                </div>
+                <div id="prueba2">
+                    
+                   
+                </div>
+                <div id="prueba3">
+                    
+                   
+                </div>
+            </div>
+
+
+        </div>
+        <div id="grafic2-4">
+            <div id="grafic4">
+
+            </div>
+            <div id="grafic2">
+                <h6>1</h6>
+                <h6>2</h6>
+                <h6>3</h6>
+                <h6>4</h6>
+                <h6>5</h6>
+                <h6>6</h6>
+                <h6>7</h6>
+                <h6>8</h6>
+                <h6>9</h6>
+                <h6>10</h6>
+                <h6>11</h6>
+                <h6>12</h6>
+                <h6>13</h6>
+                <h6>14</h6>
+                <h6>15</h6>
+                <h6>16</h6>
+                <h6>17</h6>
+                <h6>18</h6>
+                <h6>19</h6>
+                <h6>20</h6>
+                <h6>21</h6>
+                <h6>22</h6>
+                <h6>23</h6>
+                <h6>24</h6>
+                
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
