@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="/Scripts/FIFO.js"></script>
-    <link rel="stylesheet" href="/Estilos/fifo.css">
-    <title>Procesos || FIFO</title>
+    <script src="SFJ.js"></script>
+    <link rel="stylesheet" href="sjf.css">
+    <title>Procesos || SJF</title>
 </head>
 
 <body>
@@ -17,24 +17,21 @@
     <!--Nav-->
     <div id="nav">
         <ul class="uls">
-            <li class="elemento"><a class="enlac" href="/htmls/home.html">Home</a></li>
+            <li class="elemento"><a class="enlac" href="home.html">Home</a></li>
         </ul>
         <ul class="uls">
-            <li class="elemento"><a class="enlac" href="/htmls/sjf.html">SJF</a></li>
+            <li class="elemento"><a class="enlac" href="sjf.html">SJF</a></li>
         </ul>
         <ul class="uls">
-            <li class="elemento"><a class="enlac" href="/htmls/fifo.html">FIFO</a></li>
-        </ul>
-        <ul class="uls">
-            <li class="elemento"><a class="enlac" href="/htmls/roundRobin.html">Round Robin</a></li>
+            <li class="elemento"><a class="enlac" href="fifo.html">FIFO</a></li>
         </ul>
     </div>
     <!--Informacion general del proceso-->
     <div id="info">
-        <h3 id="name">First come,First Served</h3>
-        <p>Es un algoritmo muy simple, una única cola de espera y el primer proceso en llegar es al que se le concede la ejecución.</p>
+        <h3 id="name">Shorted Job First</h3>
+        <p>El proceso con menor tiempo de ejecución, es el primero en ser atendido.</p>
         <p>Pulsa el botón "Crear procesos" para generar una simulación de 3 procesos.</p>
-
+        
     </div>
 
     <!--Añadir procesos-->
@@ -63,7 +60,7 @@
         </div>
     </div>
 
-    <!--Div general de la grafica-->
+<!--Div general de la grafica-->
     <div id="pintaGrafica">
 
         <div id="grafic1-3">
@@ -76,17 +73,17 @@
 
                 <!-- generar con JS-->
                 <div id="prueba1">
-
-
-
+                    
+               
+                    
                 </div>
                 <div id="prueba2">
-
-
+                    
+                   
                 </div>
                 <div id="prueba3">
-
-
+                    
+                   
                 </div>
             </div>
 
@@ -121,7 +118,7 @@
                 <h6>22</h6>
                 <h6>23</h6>
                 <h6>24</h6>
-
+                
 
             </div>
         </div>

@@ -243,7 +243,7 @@ function generarTabla() {
             tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) - auxProceso3;
 
             //penalizacion
-            penalizacion2.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso3) - auxProceso3L) / auxProceso3;
 
             //Proceso 2
             //Inicio
@@ -804,7 +804,7 @@ function generarGrafica() {
         } else if (auxProceso2L < auxProceso1L) {
             //CASILLAS VACIAS A PROCESO 2
 
-            for (let i = 0; i < auxProceso2; i++) {
+            for (let i = 0; i < auxProceso3; i++) {
                 let casillaVacia = document.createElement("div");
                 casillaVacia.setAttribute("class", "casilla2");
                 prueba2.appendChild(casillaVacia);
