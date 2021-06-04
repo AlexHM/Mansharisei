@@ -590,7 +590,7 @@ function generarGrafica() {
 
 
 
-    if (auxProceso1 < auxProceso2 && auxProceso1 < auxProceso3) {
+    if (auxProceso1L < auxProceso2L && auxProceso1L < auxProceso3L) {
 
         for (let a = 0; a < auxProceso1; a++) {
             let casilla = document.createElement("div");
@@ -598,7 +598,7 @@ function generarGrafica() {
             prueba1.appendChild(casilla);
         }
 
-        if (auxProceso2 < auxProceso3) {
+        if (auxProceso2L < auxProceso3L3) {
 
             //CASILLAS VACIAS A PROCESO 2
 
@@ -631,7 +631,7 @@ function generarGrafica() {
 
             }
 
-        } else if (auxProceso3 < auxProceso2) {
+        } else if (auxProceso3L < auxProceso2Loceso2) {
             //CASILLAS VACIAS A PROCESO 3
 
             for (let i = 0; i < auxProceso1; i++) {
@@ -665,7 +665,7 @@ function generarGrafica() {
 
 
 
-    } else if (auxProceso2 < auxProceso1 && auxProceso2 < auxProceso3) {
+    } else if (auxProceso2L < auxProceso1L && auxProceso2L < auxProceso3L) {
 
         for (let a = 0; a < auxProceso2; a++) {
             let casilla2 = document.createElement("div");
@@ -673,7 +673,7 @@ function generarGrafica() {
             prueba2.appendChild(casilla2);
         }
 
-        if (auxProceso1 < auxProceso3) {
+        if (auxProceso1L < auxProceso3L) {
 
             //CASILLAS VACIAS A PROCESO 1
 
@@ -706,7 +706,7 @@ function generarGrafica() {
 
             }
 
-        } else if (auxProceso3 < auxProceso1) {
+        } else if (auxProceso3L < auxProceso1L) {
             //CASILLAS VACIAS A PROCESO 3
 
             for (let i = 0; i < auxProceso2; i++) {
@@ -742,7 +742,7 @@ function generarGrafica() {
 
 
 
-    } else if (auxProceso3 < auxProceso1 && auxProceso3 < auxProceso2) {
+    } else if (auxProceso3L < auxProceso1L && auxProceso3L < auxProceso2L) {
 
         for (let a = 0; a < auxProceso3; a++) {
             let casilla3 = document.createElement("div");
@@ -750,7 +750,7 @@ function generarGrafica() {
             prueba3.appendChild(casilla3);
         }
 
-        if (auxProceso1 < auxProceso2) {
+        if (auxProceso1L < auxProceso2L) {
 
             //CASILLAS VACIAS A PROCESO 1
 
@@ -783,7 +783,7 @@ function generarGrafica() {
 
             }
 
-        } else if (auxProceso2 < auxProceso1) {
+        } else if (auxProceso2L < auxProceso1L) {
             //CASILLAS VACIAS A PROCESO 2
 
             for (let i = 0; i < auxProceso2; i++) {
@@ -813,13 +813,15 @@ function generarGrafica() {
                 prueba1.appendChild(casilla1);
 
             }
+
+
         }
 
 
 
 
 
-    } else if (auxProceso1 == auxProceso2 && auxProceso1 < auxProceso3) {
+    } else if (auxProceso1L == auxProceso2L && auxProceso1L < auxProceso3L) {
 
         if (auxProceso1L < auxProceso2L) {
             //Casillas normales a proceso 1
