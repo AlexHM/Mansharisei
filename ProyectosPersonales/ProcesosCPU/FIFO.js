@@ -551,6 +551,8 @@ function crearProcesos() {
         let input = document.createElement("input");
         input.setAttribute("type", "number");
         input.setAttribute("id", count2);
+        h6_1.style.marginRight="5px";
+        h6_1.style.marginTop="5px";
 
 
         proceso.appendChild(h6_1);
@@ -564,6 +566,10 @@ function crearProcesos() {
         let input2 = document.createElement("input");
         input2.setAttribute("type", "number");
         input2.setAttribute("id", count3);
+
+        h6_2.style.marginRight="5px";
+        h6_2.style.marginLeft="5px";
+        h6_2.style.marginTop="5px";
 
         proceso.appendChild(h6_2);
         h6_2.appendChild(textoH6_2);
