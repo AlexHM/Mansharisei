@@ -575,7 +575,9 @@ var aux = 35;
 
 function generarGrafica() {
     let grafica = document.getElementById("pintaGrafica").style.display = "block";
-
+    let auxProceso1L = Number.parseInt(document.getElementById("1").value);
+    let auxProceso2L = Number.parseInt(document.getElementById("2").value);
+    let auxProceso3L = Number.parseInt(document.getElementById("3").value);
     let auxProceso1 = Number.parseInt(document.getElementById("4").value);
     let auxProceso2 = Number.parseInt(document.getElementById("5").value)
     let auxProceso3 = Number.parseInt(document.getElementById("6").value);
@@ -815,7 +817,126 @@ function generarGrafica() {
 
 
 
+    } else if (auxProceso1 == auxProceso2 && auxProceso1 < auxProceso3) {
+
+        if (auxProceso1L < auxProceso2L) {
+            //Casillas normales a proceso 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla = document.createElement("div");
+                casilla.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla);
+            }
+
+            //Casillas vacias a proceso 2
+            for (let a = 0; a < auxProceso1; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceos 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //Casillas vacias a proceso 3
+            for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+
+            }
+
+        } else if (auxProceso2L < auxProceso1L) {
+
+            //Casillas normales a proceso 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //Casillas vacias a proceso 1
+            for (let a = 0; a < auxProceso2; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba1.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla1 = document.createElement("div");
+                casilla1.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla1);
+            }
+
+            //Casillas vacias a proceso 3
+            for (let a = 0; a < auxProceso2 + auxProceso1; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+            }
+
+
+
+
+
+
+
+
+        } else if (auxProceso1L == auxProceso2L) {
+            //Casillas normales a proceso 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla = document.createElement("div");
+                casilla.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla);
+            }
+
+            //Casillas vacias a proceso 2
+            for (let a = 0; a < auxProceso1; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceos 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //Casillas vacias a proceso 3
+            for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+            }
+
+        }
+
     }
-
-
 }
