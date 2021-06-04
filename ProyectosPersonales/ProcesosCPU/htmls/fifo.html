@@ -31,47 +31,103 @@
     </div>
     <!--Informacion general del proceso-->
     <div id="info">
-        <h3 id="name">First in First out</h3>
-        <p>El primero que llega es el primero en empezar.Se introducirán los procesos de forma consecutiva por tiempo de
-            llegada.<br>
-            Esta simulación no contempla prioridades.Se introducirán 5 procesos.</p>
+        <h3 id="name">First come,First Served</h3>
+        <p>Es un algoritmo muy simple, una única cola de espera y el primer proceso en llegar es al que se le concede la ejecución.</p>
+        <p>Pulsa el botón "Crear procesos" para generar una simulación de 3 procesos.</p>
+
     </div>
 
     <!--Añadir procesos-->
     <div id="cargapProcesos">
-        
-        <h6>Tiempo de ejecución: </h6><input type="number" id="tiempoEjecucion"><br>
-        <button style="margin-top: 1%;" id="btnNumProcesos" onclick="generarTabla();">Confirmar</button>
+
+        <button id="btnProcesos" onclick="crearProcesos();">Generar procesos</button>
+        <div id="procesosCreados">
+
+        </div>
 
 
-        
     </div>
 
     <!--Tabla generada dínamca-->
-    <div id="procesosCreados">
+
+    <div id="divTabla">
         <table id="tabla">
-            <tr>
-                <th>Proceso</th>
-                <th>Tiempo llegada</th>
-                <th>Tiempo ejecución</th>
-                <th>Inicio</th>
-                <th>Fin</th>
-                <th>tiempo respuesta</th>
-                <th>Tiempo espera</th>
-                <th>Penalizacion</th>
-                
-            </tr>
-
-
-
-
         </table>
 
     </div>
-    
-  
-    
-    
+
+    <div id="divGrafica">
+
+        <div id="grafica">
+
+        </div>
+    </div>
+
+    <!--Div general de la grafica-->
+    <div id="pintaGrafica">
+
+        <div id="grafic1-3">
+            <div id="grafic">
+                <h6>1</h6>
+                <h6>2</h6>
+                <h6>3</h6>
+            </div>
+            <div class="grafic3">
+
+                <!-- generar con JS-->
+                <div id="prueba1">
+
+
+
+                </div>
+                <div id="prueba2">
+
+
+                </div>
+                <div id="prueba3">
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <div id="grafic2-4">
+            <div id="grafic4">
+
+            </div>
+            <div id="grafic2">
+                <h6>1</h6>
+                <h6>2</h6>
+                <h6>3</h6>
+                <h6>4</h6>
+                <h6>5</h6>
+                <h6>6</h6>
+                <h6>7</h6>
+                <h6>8</h6>
+                <h6>9</h6>
+                <h6>10</h6>
+                <h6>11</h6>
+                <h6>12</h6>
+                <h6>13</h6>
+                <h6>14</h6>
+                <h6>15</h6>
+                <h6>16</h6>
+                <h6>17</h6>
+                <h6>18</h6>
+                <h6>19</h6>
+                <h6>20</h6>
+                <h6>21</h6>
+                <h6>22</h6>
+                <h6>23</h6>
+                <h6>24</h6>
+
+
+            </div>
+        </div>
+
+
+    </div>
 
 
 

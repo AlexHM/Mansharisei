@@ -1,9 +1,3 @@
-
-
-
-
-
-
 function generarTabla() {
     let tabla = document.getElementById("tabla");
     console.log(tabla);
@@ -70,6 +64,7 @@ function generarTabla() {
     let proceso1 = document.createElement("td");
     let textoProceso1 = document.createTextNode("1");
 
+
     proceso1.appendChild(textoProceso1);
     tr1.appendChild(proceso1);
 
@@ -104,6 +99,7 @@ function generarTabla() {
     let proceso2 = document.createElement("td");
     let textoProceso2 = document.createTextNode("2");
 
+
     proceso2.appendChild(textoProceso2);
     tr2.appendChild(proceso2);
 
@@ -134,9 +130,10 @@ function generarTabla() {
     let tr3 = document.createElement("tr");
     tabla.appendChild(tr3);
 
-    //Proceso2
+    //Proceso3
     let proceso3 = document.createElement("td");
     let textoProceso3 = document.createTextNode("3");
+
 
     proceso3.appendChild(textoProceso3);
     tr3.appendChild(proceso3);
@@ -177,7 +174,7 @@ function generarTabla() {
 
     if (auxProceso1 < auxProceso2 && auxProceso1 < auxProceso3) {
         inicio1.innerHTML = "0";
-        
+
         ////Comparación-Fin-tiempo ejecucción
         fin1.innerHTML = auxProceso1;
 
@@ -347,14 +344,171 @@ function generarTabla() {
             penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso2L) / auxProceso2;
         }
 
+    } else if (auxProceso1 == auxProceso2 && auxProceso1 < auxProceso3) {
+
+        if (auxProceso1L < auxProceso2L) {
+            //Proceso 1
+            //Inicio
+            inicio1.innerHTML = "0";
+
+            //fin
+            fin1.innerHTML = auxProceso1;
+
+            //Tiempo respuesta
+            tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
+
+            //tiempo espera
+            tiempoEspera1.innerHTML = (auxProceso1 - auxProceso1L) - auxProceso1;
+
+            //Penalizacion
+            penalizacion1.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
+
+            //Proceso2
+            //Inicio
+            inicio2.innerHTML = auxProceso1;
+
+            //fin
+            fin2.innerHTML = (auxProceso1 + auxProceso2);
+
+            //Tiempo respuesta
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+
+            //tiempo espera
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+
+            //Penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+
+            //Proceso3
+            //Inicio
+            inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+            //fin
+            fin3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3);
+
+            //Tiempo respuesta
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+            //tiempo espera
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+
+            //Penalizacion
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
+
+
+
+
+        } else if (auxProceso2L < auxProceso1L) {
+
+            //Proceso 2
+            //Inicio
+            inicio2.innerHTML = "0";
+
+            //fin
+            fin2.innerHTML = auxProceso2;
+
+            //Tiempo respuesta
+            tiempoRespuesta2.innerHTML = auxProceso2 - auxProceso2L;
+
+            //tiempo espera
+            tiempoEspera2.innerHTML = (auxProceso2 - auxProceso2L) - auxProceso2;
+
+            //Penalizacion
+            penalizacion2.innerHTML = (auxProceso2 - auxProceso2L) / auxProceso2;
+
+            //Proceso1
+            //Inicio
+            inicio1.innerHTML = auxProceso2;
+
+            //fin
+            fin1.innerHTML = (auxProceso1 + auxProceso2);
+
+            //Tiempo respuesta
+            tiempoRespuesta1.innerHTML = (auxProceso1 + auxProceso2) - auxProceso1L;
+
+            //tiempo espera
+            tiempoEspera1.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso1L) - auxProceso1;
+
+            //Penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso1L) / auxProceso1;
+
+            //Proceso3
+            //Inicio
+            inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+            //fin
+            fin3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3);
+
+            //Tiempo respuesta
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+            //tiempo espera
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+
+            //Penalizacion
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
+
+        }
+        else if (auxProceso1L == auxProceso2L) {
+
+            //Proceso1
+            //Inicio
+            inicio1.innerHTML = "0";
+
+            //fin
+            fin1.innerHTML = auxProceso1;
+
+            //Tiempo respuesta
+            tiempoRespuesta1.innerHTML = auxProceso1 - auxProceso1L;
+
+            //tiempo espera
+            tiempoEspera3.innerHTML = (auxProceso1 - auxProceso1L) - auxProceso1;
+
+            //Penalizacion
+            penalizacion3.innerHTML = (auxProceso1 - auxProceso1L) / auxProceso1;
+
+            //Proceso 2
+            //Inicio
+            inicio2.innerHTML = auxProceso1;
+
+            //fin
+            fin2.innerHTML = (auxProceso1 + auxProceso2);
+
+            //Tiempo respuesta
+            tiempoRespuesta2.innerHTML = (auxProceso1 + auxProceso2) - auxProceso2L;
+
+            //tiempo espera
+            tiempoEspera2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) - auxProceso2;
+
+            //Penalizacion
+            penalizacion2.innerHTML = ((auxProceso1 + auxProceso2) - auxProceso2L) / auxProceso2;
+
+            //Proceso3
+            //Inicio
+            inicio3.innerHTML = auxProceso1 + auxProceso2;
+
+            //fin
+            fin3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3);
+
+            //Tiempo respuesta
+            tiempoRespuesta3.innerHTML = (auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L;
+
+            //tiempo espera
+            tiempoEspera3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
+
+            //Penalizacion
+            penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
+        }
     }
 
+
     //boton para generar Grafica
-    let Grafica=document.getElementById("grafica");
-    btnGrafica=document.createElement("button");
-    btnGrafica.setAttribute("id","btnGrafica");
-    btnGrafica.setAttribute("onclick","generarGrafica();");
-    textoBtnGrafica=document.createTextNode("Generar gráfica");
+    let Grafica = document.getElementById("grafica");
+    btnGrafica = document.createElement("button");
+    btnGrafica.setAttribute("id", "btnGrafica");
+    btnGrafica.setAttribute("id", "btnGrafica");
+    btnGrafica.setAttribute("onclick", "generarGrafica();");
+    textoBtnGrafica = document.createTextNode("Generar gráfica");
     btnGrafica.appendChild(textoBtnGrafica);
     Grafica.appendChild(btnGrafica);
 }
@@ -368,18 +522,19 @@ function crearProcesos() {
 
     let count2 = 1;
     let count3 = 4;
-    
+
     for (let i = 0; i < 3; i++) {
         //Etiqueta del proceso
         let h5 = document.createElement("h5");
         proceso.appendChild(h5);
         let textoH5 = document.createTextNode(`proceso ${count2}`);
+        h5.setAttribute("class", "procesosColor");
         h5.appendChild(textoH5);
 
 
         //Tiempo de llegada
         let h6_1 = document.createElement("h6");
-        h6_1.setAttribute("class","TE-TL")
+        h6_1.setAttribute("class", "TE-TL")
         let textoH6_1 = document.createTextNode("Tiempo llegada:")
         let input = document.createElement("input");
         input.setAttribute("type", "number");
@@ -392,7 +547,7 @@ function crearProcesos() {
 
         //Tiempo de ejecucción
         let h6_2 = document.createElement("h6");
-        h6_2.setAttribute("class","TE-TL")
+        h6_2.setAttribute("class", "TE-TL")
         let textoH6_2 = document.createTextNode("Tiempo Ejecución:")
         let input2 = document.createElement("input");
         input2.setAttribute("type", "number");
@@ -409,8 +564,379 @@ function crearProcesos() {
     btnEnviar.setAttribute("id", "btnEnviar");
     btnEnviar.setAttribute("onclick", "generarTabla();");
     textoBtnEnviar = document.createTextNode("Generar tabla");
+    btnEnviar.setAttribute("id", "btnEnviar");
     btnEnviar.appendChild(textoBtnEnviar);
     proceso.appendChild(btnEnviar);
-    
-    
+
+
+}
+
+var aux = 35;
+
+function generarGrafica() {
+    let grafica = document.getElementById("pintaGrafica").style.display = "block";
+    let auxProceso1L = Number.parseInt(document.getElementById("1").value);
+    let auxProceso2L = Number.parseInt(document.getElementById("2").value);
+    let auxProceso3L = Number.parseInt(document.getElementById("3").value);
+    let auxProceso1 = Number.parseInt(document.getElementById("4").value);
+    let auxProceso2 = Number.parseInt(document.getElementById("5").value)
+    let auxProceso3 = Number.parseInt(document.getElementById("6").value);
+    let prueba1 = document.getElementById("prueba1");
+    let prueba2 = document.getElementById("prueba2");
+    let prueba3 = document.getElementById("prueba3");
+
+
+
+
+    if (auxProceso1 < auxProceso2 && auxProceso1 < auxProceso3) {
+
+        for (let a = 0; a < auxProceso1; a++) {
+            let casilla = document.createElement("div");
+            casilla.setAttribute("class", "casilla");
+            prueba1.appendChild(casilla);
+        }
+
+        if (auxProceso2 < auxProceso3) {
+
+            //CASILLAS VACIAS A PROCESO 2
+
+            for (let i = 0; i < auxProceso1; i++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+
+            }
+            //CASILLAS NORMALES A PROCESO 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //CASILLAS VACIAS A PROCESO 3
+            for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //CASILLAS NORNAMES A PROCESO 2
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+
+            }
+
+        } else if (auxProceso3 < auxProceso2) {
+            //CASILLAS VACIAS A PROCESO 3
+
+            for (let i = 0; i < auxProceso1; i++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+
+            }
+            //CASILLAS NORMALES A PROCESO 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+            }
+
+            //CASILLAS VACIAS A PROCESO 2
+            for (let a = 0; a < (auxProceso1 + auxProceso3); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+            }
+
+            //CASILLAS NORMALES A PROCESO 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+
+            }
+        }
+
+
+
+    } else if (auxProceso2 < auxProceso1 && auxProceso2 < auxProceso3) {
+
+        for (let a = 0; a < auxProceso2; a++) {
+            let casilla2 = document.createElement("div");
+            casilla2.setAttribute("class", "casilla");
+            prueba2.appendChild(casilla2);
+        }
+
+        if (auxProceso1 < auxProceso3) {
+
+            //CASILLAS VACIAS A PROCESO 1
+
+            for (let i = 0; i < auxProceso2; i++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba1.appendChild(casillaVacia);
+
+            }
+            //CASILLAS NORMALES A PROCESO 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla1 = document.createElement("div");
+                casilla1.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla1);
+            }
+
+            //CASILLAS VACIAS A PROCESO 3
+            for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //CASILLAS NORNAMES A PROCESO 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+
+            }
+
+        } else if (auxProceso3 < auxProceso1) {
+            //CASILLAS VACIAS A PROCESO 3
+
+            for (let i = 0; i < auxProceso2; i++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+
+            }
+            //CASILLAS NORMALES A PROCESO 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+            }
+
+            //CASILLAS VACIAS A PROCESO 1
+            for (let a = 0; a < (auxProceso2 + auxProceso3); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba1.appendChild(casillaVacia);
+            }
+
+            //CASILLAS NORMALES A PROCESO 3
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla1 = document.createElement("div");
+                casilla1.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla1);
+
+            }
+        }
+
+
+
+
+
+    } else if (auxProceso3 < auxProceso1 && auxProceso3 < auxProceso2) {
+
+        for (let a = 0; a < auxProceso3; a++) {
+            let casilla3 = document.createElement("div");
+            casilla3.setAttribute("class", "casilla");
+            prueba3.appendChild(casilla3);
+        }
+
+        if (auxProceso1 < auxProceso2) {
+
+            //CASILLAS VACIAS A PROCESO 1
+
+            for (let i = 0; i < auxProceso3; i++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba1.appendChild(casillaVacia);
+
+            }
+            //CASILLAS NORMALES A PROCESO 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla1 = document.createElement("div");
+                casilla1.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla1);
+            }
+
+            //CASILLAS VACIAS A PROCESO 2
+            for (let a = 0; a < (auxProceso1 + auxProceso3); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+
+                prueba2.appendChild(casillaVacia);
+            }
+
+            //CASILLAS NORNAMES A PROCESO 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+
+            }
+
+        } else if (auxProceso2 < auxProceso1) {
+            //CASILLAS VACIAS A PROCESO 2
+
+            for (let i = 0; i < auxProceso2; i++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+
+            }
+            //CASILLAS NORMALES A PROCESO 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //CASILLAS VACIAS A PROCESO 1
+            for (let a = 0; a < (auxProceso2 + auxProceso3); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba1.appendChild(casillaVacia);
+            }
+
+            //CASILLAS NORMALES A PROCESO 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla1 = document.createElement("div");
+                casilla1.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla1);
+
+            }
+        }
+
+
+
+
+
+    } else if (auxProceso1 == auxProceso2 && auxProceso1 < auxProceso3) {
+
+        if (auxProceso1L < auxProceso2L) {
+            //Casillas normales a proceso 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla = document.createElement("div");
+                casilla.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla);
+            }
+
+            //Casillas vacias a proceso 2
+            for (let a = 0; a < auxProceso1; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceos 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //Casillas vacias a proceso 3
+            for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+
+            }
+
+        } else if (auxProceso2L < auxProceso1L) {
+
+            //Casillas normales a proceso 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //Casillas vacias a proceso 1
+            for (let a = 0; a < auxProceso2; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba1.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla1 = document.createElement("div");
+                casilla1.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla1);
+            }
+
+            //Casillas vacias a proceso 3
+            for (let a = 0; a < auxProceso2 + auxProceso1; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+            }
+
+
+
+
+
+
+
+
+        } else if (auxProceso1L == auxProceso2L) {
+            //Casillas normales a proceso 1
+            for (let a = 0; a < auxProceso1; a++) {
+                let casilla = document.createElement("div");
+                casilla.setAttribute("class", "casilla");
+                prueba1.appendChild(casilla);
+            }
+
+            //Casillas vacias a proceso 2
+            for (let a = 0; a < auxProceso1; a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba2.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceos 2
+            for (let a = 0; a < auxProceso2; a++) {
+                let casilla2 = document.createElement("div");
+                casilla2.setAttribute("class", "casilla");
+                prueba2.appendChild(casilla2);
+            }
+
+            //Casillas vacias a proceso 3
+            for (let a = 0; a < (auxProceso1 + auxProceso2); a++) {
+                let casillaVacia = document.createElement("div");
+                casillaVacia.setAttribute("class", "casilla2");
+                prueba3.appendChild(casillaVacia);
+            }
+
+            //Casillas normales a proceso 3
+            for (let a = 0; a < auxProceso3; a++) {
+                let casilla3 = document.createElement("div");
+                casilla3.setAttribute("class", "casilla");
+                prueba3.appendChild(casilla3);
+            }
+
+        }
+
+    }
 }
