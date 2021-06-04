@@ -1,7 +1,5 @@
 function generarTabla() {
 
-
-
     let tabla = document.getElementById("tabla");
     console.log(tabla);
 
@@ -577,6 +575,7 @@ function crearProcesos() {
         count2++;
         count3++;
     }
+
     //boton para generar Table
     let btnEnviar = document.createElement("button");
     btnEnviar.setAttribute("id", "btnEnviar");
@@ -623,6 +622,7 @@ function generarGrafica() {
             prueba1.appendChild(casilla);
         }
 
+        
         if (auxProceso2L < auxProceso3L) {
 
             //CASILLAS VACIAS A PROCESO 2
