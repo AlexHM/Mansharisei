@@ -260,8 +260,6 @@ function generarTabla() {
             penalizacion2.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
         }
 
-
-
     } else if (auxProceso2L < auxProceso1L && auxProceso2L < auxProceso3L) {
 
         //Inicio
@@ -330,7 +328,7 @@ function generarTabla() {
             tiempoEspera3.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso3L) - auxProceso3;
 
             //penalizacion
-            penalizacion2.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
+            penalizacion3.innerHTML = ((auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
 
             //Proceso 1
             //Inicio
@@ -349,10 +347,6 @@ function generarTabla() {
             penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) / auxProceso1;
         }
 
-
-
-
-
     } else if (auxProceso3L < auxProceso1L && auxProceso3L < auxProceso2L) {
 
         //Inicio
@@ -369,7 +363,6 @@ function generarTabla() {
 
         //penalizacion
         penalizacion3.innerHTML = (auxProceso3 - auxProceso3L) / auxProceso3;
-
 
 
         if (auxProceso1L < auxProceso2L) {
@@ -409,10 +402,6 @@ function generarTabla() {
 
         } else if (auxProceso2L < auxProceso1L) {
 
-
-
-
-
             //PRoceso2
             //Inicio
             inicio2.innerHTML = auxProceso3;
@@ -445,10 +434,6 @@ function generarTabla() {
             //penalizacion
             penalizacion1.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso1L) / auxProceso1;
         }
-
-
-
-
 
     } else if (auxProceso1L == auxProceso2L && auxProceso1L < auxProceso3L) {
         //Inicio
@@ -497,13 +482,7 @@ function generarTabla() {
 
         //penalizacion
         penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3;
-
-
-
     }
-
-
-
 
     //boton para generar Grafica
     let Grafica = document.getElementById("grafica");
@@ -519,8 +498,6 @@ function generarTabla() {
     //Ocultar boton generar tabla
     let btnTabla = document.getElementById("btnEnviar");
     btnTabla.style.display = "none";
-
-
 }
 
 
@@ -589,16 +566,11 @@ function crearProcesos() {
     //Ocultar boton generar procesos
     let btnProceso = document.getElementById("btnProcesos");
     btnProceso.style.display = "none";
-
-
-
 }
 
 var aux = 35;
 
 function generarGrafica() {
-
-
 
     let grafica = document.getElementById("pintaGrafica").style.display = "block";
     let auxProceso1L = Number.parseInt(document.getElementById("1").value);
@@ -612,8 +584,6 @@ function generarGrafica() {
     let prueba3 = document.getElementById("prueba3");
 
 
-
-
     if (auxProceso1L < auxProceso2L && auxProceso1L < auxProceso3L) {
 
         for (let a = 0; a < auxProceso1; a++) {
@@ -622,7 +592,6 @@ function generarGrafica() {
             prueba1.appendChild(casilla);
         }
 
-        
         if (auxProceso2L < auxProceso3L) {
 
             //CASILLAS VACIAS A PROCESO 2
@@ -652,7 +621,6 @@ function generarGrafica() {
                 let casilla3 = document.createElement("div");
                 casilla3.setAttribute("class", "casilla");
                 prueba3.appendChild(casilla3);
-
             }
 
         } else if (auxProceso3L < auxProceso2L) {
@@ -683,11 +651,8 @@ function generarGrafica() {
                 let casilla2 = document.createElement("div");
                 casilla2.setAttribute("class", "casilla");
                 prueba2.appendChild(casilla2);
-
             }
         }
-
-
 
     } else if (auxProceso2L < auxProceso1L && auxProceso2L < auxProceso3L) {
 
@@ -727,7 +692,6 @@ function generarGrafica() {
                 let casilla3 = document.createElement("div");
                 casilla3.setAttribute("class", "casilla");
                 prueba3.appendChild(casilla3);
-
             }
 
         } else if (auxProceso3L < auxProceso1L) {
@@ -758,13 +722,8 @@ function generarGrafica() {
                 let casilla1 = document.createElement("div");
                 casilla1.setAttribute("class", "casilla");
                 prueba1.appendChild(casilla1);
-
             }
         }
-
-
-
-
 
     } else if (auxProceso3L < auxProceso1L && auxProceso3L < auxProceso2L) {
 
@@ -837,13 +796,7 @@ function generarGrafica() {
                 prueba1.appendChild(casilla1);
 
             }
-
-
         }
-
-
-
-
 
     } else if (auxProceso1L == auxProceso2L && auxProceso1L < auxProceso3L) {
 
@@ -921,13 +874,6 @@ function generarGrafica() {
                 prueba3.appendChild(casilla3);
             }
 
-
-
-
-
-
-
-
         } else if (auxProceso1L == auxProceso2L) {
             //Casillas normales a proceso 1
             for (let a = 0; a < auxProceso1; a++) {
@@ -963,11 +909,8 @@ function generarGrafica() {
                 casilla3.setAttribute("class", "casilla");
                 prueba3.appendChild(casilla3);
             }
-
         }
-
     }
-
 
     //Ocultar boton generar gráfica
     let btnGrafica2 = document.getElementById("btnGrafica");
@@ -984,9 +927,6 @@ function generarGrafica() {
     btnRefresco.appendChild(textoBtnRefresco);
     divProceso.appendChild(btnRefresco);
 }
-
-
-
 
 function recargar() {
     location.reload();

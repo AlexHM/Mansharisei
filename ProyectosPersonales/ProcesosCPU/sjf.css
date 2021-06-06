@@ -3,6 +3,9 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.p1{
+    color: cornflowerblue;
+}
 
 #img {
     width: 30%;

@@ -395,9 +395,6 @@ function generarTabla() {
             //Penalizacion
             penalizacion3.innerHTML = ((auxProceso1 + auxProceso2 + auxProceso3) - auxProceso3L) / auxProceso3
 
-
-
-
         } else if (auxProceso2L < auxProceso1L) {
 
             //Proceso 2
@@ -501,7 +498,6 @@ function generarTabla() {
         }
     }
 
-
     //boton para generar Grafica
     let Grafica = document.getElementById("grafica");
     btnGrafica = document.createElement("button");
@@ -581,8 +577,6 @@ function crearProcesos() {
     //Ocultar boton generar procesos
     let btnProceso = document.getElementById("btnProcesos");
     btnProceso.style.display = "none";
-
-
 }
 
 var aux = 35;
@@ -598,9 +592,6 @@ function generarGrafica() {
     let prueba1 = document.getElementById("prueba1");
     let prueba2 = document.getElementById("prueba2");
     let prueba3 = document.getElementById("prueba3");
-
-
-
 
     if (auxProceso1 < auxProceso2 && auxProceso1 < auxProceso3) {
 
@@ -675,8 +666,6 @@ function generarGrafica() {
             }
         }
 
-
-
     } else if (auxProceso2 < auxProceso1 && auxProceso2 < auxProceso3) {
 
         for (let a = 0; a < auxProceso2; a++) {
@@ -750,10 +739,6 @@ function generarGrafica() {
             }
         }
 
-
-
-
-
     } else if (auxProceso3 < auxProceso1 && auxProceso3 < auxProceso2) {
 
         for (let a = 0; a < auxProceso3; a++) {
@@ -826,10 +811,6 @@ function generarGrafica() {
 
             }
         }
-
-
-
-
 
     } else if (auxProceso1 == auxProceso2 && auxProceso1 < auxProceso3) {
 
@@ -907,13 +888,6 @@ function generarGrafica() {
                 prueba3.appendChild(casilla3);
             }
 
-
-
-
-
-
-
-
         } else if (auxProceso1L == auxProceso2L) {
             //Casillas normales a proceso 1
             for (let a = 0; a < auxProceso1; a++) {
@@ -966,10 +940,7 @@ function generarGrafica() {
      let divProceso = document.getElementById("info");
      btnRefresco.appendChild(textoBtnRefresco);
      divProceso.appendChild(btnRefresco);
-
-
 }
-
 
 function recargar() {
     location.reload();
