@@ -1,0 +1,18 @@
+
+
+Idea General--> App de gestion de gastos. Se podrá introducir articulo e importe de la compra. 
+Ademas generará gráficos y se podrá consultar los gastos de cualquier cosa que se haya comprado por fecha de un 
+calendario desplegable.
+
+
+Funcionalidades-->
+			1.Ingresar gastos con su precio
+			2.Poder consultar los gatos en un dia concreto
+			3.generar grafica, mensual y anual.
+
+Se usará camelCase y se escribirá el programa en java con swing para la interfaz de la aplicación.
+
+
+Diseños elaborados en figma.
+			
+
